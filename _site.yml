@@ -6,7 +6,7 @@ navbar:
     - text: "Home"
       icon: fa-home
       href: index.html
-    - text: "About"
+    - text: "Getting Started"
       icon: fa-info
       href: getting-started.html
     - text: "More"
