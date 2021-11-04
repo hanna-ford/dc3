@@ -1,6 +1,11 @@
 ---
 title: "Intro to RBioTools"
 output: html_document
+knit: (function(input_file, encoding) {
+  out_dir <- 'docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 editor_options:
   chunk_output_type: console
 ---
@@ -66,7 +71,7 @@ Choose a directory / folder that will be used for some of the figures, including
 ```{r working.directory, eval=FALSE, echo=FALSE}
 
 #this line checks to see if the folder exists; if it does not then it creates the folder; if it does then it returns "Folder exists already"
-ifelse(!dir.exists(".//R_repository//"), dir.create(".//R_repository//"), "Folder exists already")
+ifelse(!dir.exists(".//r_repository//"), dir.create(".//r_repository//"), "Folder exists already")
 
 setwd("C:/dc3/R_repository")
 
