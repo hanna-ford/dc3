@@ -1,39 +1,106 @@
 ---
-title: "DC3 RBioTools"
-author: "Hanna L Ford"
-date: "November 4, 2021"
-output: 
-  html_document: 
-    number_sections: yes
-    toc: yes
+title: "Intro to RBioTools"
+output: html_document
+editor_options:
+  chunk_output_type: console
 ---
 
-```{r global_options, include=FALSE}
-knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='figs/',
-                      echo=FALSE, warning=FALSE, message=FALSE)
-```
-
-
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(eval=TRUE, echo = FALSE)
 ```
 
-## R Markdown
+# Introduction to RBiotools
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+RBiotools is a package for COMPARATIVE MICROBIAL GENOMICS. RBiotools works best in the RStudio integrated development environment. RBiotools works with IDs from GenBank, the NIH genetic sequence data base, to perform analyses and create figures.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+## Before installation, check the version of R that is being used
+These instructions are prepared using:
+*R version 4.1.1 (2021-08-10)
 
-```{r cars}
-summary(cars)
+
+```{r verify.version, eval=TRUE, echo=TRUE}
+
+sessionInfo()
+
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
+## Install the RBiotools package and other required packages
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+1. install the dependencies
+```{r install.dependencies, eval=FALSE, echo=TRUE}
+
+install.packages(c("rlang","ape", "fmsb", "gplots", "grImport", "gridExtra", "msa", "pheatmap", "RCurl", "rentrez", "seqinr"))
+install.packages(c("lattice","mgcv","nlme","survival"))
+
+#Install msa and Biostrings package via BiocManager
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("msa")
+BiocManager::install("Biostrings", force = TRUE)
+
+
+install.packages("installr")
+library(installr)
+
+
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+2. install the RBiotools package from zip source; and activate it in the workspace
+
+```{r install.packages, eval=FALSE, echo=TRUE}
+
+install.packages("C:/dc3/RBiotools_0.5.0.tar.gz", repos = NULL, type = "source")
+library(RBiotools)
+
+```
+
+3. Setup the environment and working directory
+Choose a directory / folder that will be used for some of the figures, including Heat Maps and Genome Atlases:
+
+* Create this directory on your computer, if it does not already exist
+* Make this directory the "Working Directory"
+
+```{r working.directory, eval=FALSE, echo=FALSE}
+
+#this line checks to see if the folder exists; if it does not then it creates the folder; if it does then it returns "Folder exists already"
+ifelse(!dir.exists(".//R_repository//"), dir.create(".//R_repository//"), "Folder exists already")
+
+setwd("C:/dc3/R_repository")
+
+```
+
+# Introduction to RBiotools
+
+1. Choose a set of organisms
+What is an organism?
+* Organisms are specified with GenBank identifiers 
+* Organisms NOT in Genbank can be added with the RBiotools addGenome function
+
+Let's use a sample sets of organisms to start with:
+
+In the following statement:
+   "myGenomes" is an arbitrary variable name
+   "c" is an R function to "combine" things into a list
+   Comments are for the user's benefit and are NOT required
+   Items in a list DO NOT have to be on separate lines
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

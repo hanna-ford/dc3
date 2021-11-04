@@ -9,11 +9,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Hanna L Ford" />
 
-<meta name="date" content="2021-11-04" />
 
-<title>DC3 RBioTools</title>
+<title>Intro to RBioTools</title>
 
 <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -302,37 +300,83 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">DC3 RBioTools</h1>
-<h4 class="author">Hanna L Ford</h4>
-<h4 class="date">November 4, 2021</h4>
+<h1 class="title toc-ignore">Intro to RBioTools</h1>
 
 </div>
 
-<div id="TOC">
+
+<div id="introduction-to-rbiotools" class="section level1">
+<h1>Introduction to RBiotools</h1>
+<p>RBiotools is a package for COMPARATIVE MICROBIAL GENOMICS. RBiotools works best in the RStudio integrated development environment. RBiotools works with IDs from GenBank, the NIH genetic sequence data base, to perform analyses and create figures.</p>
+<div id="before-installation-check-the-version-of-r-that-is-being-used" class="section level2">
+<h2>Before installation, check the version of R that is being used</h2>
+<p>These instructions are prepared using: *R version 4.1.1 (2021-08-10)</p>
+<pre class="r"><code>sessionInfo()</code></pre>
+<pre><code>## R version 4.1.1 (2021-08-10)
+## Platform: x86_64-w64-mingw32/x64 (64-bit)
+## Running under: Windows 10 x64 (build 18363)
+## 
+## Matrix products: default
+## 
+## locale:
+## [1] LC_COLLATE=English_United States.1252 
+## [2] LC_CTYPE=English_United States.1252   
+## [3] LC_MONETARY=English_United States.1252
+## [4] LC_NUMERIC=C                          
+## [5] LC_TIME=English_United States.1252    
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## loaded via a namespace (and not attached):
+##  [1] compiler_4.1.1  magrittr_2.0.1  fastmap_1.1.0   tools_4.1.1    
+##  [5] htmltools_0.5.2 yaml_2.2.1      jquerylib_0.1.4 stringi_1.7.5  
+##  [9] rmarkdown_2.11  knitr_1.36      stringr_1.4.0   xfun_0.28      
+## [13] digest_0.6.28   rlang_0.4.12    evaluate_0.14</code></pre>
+</div>
+<div id="install-the-rbiotools-package-and-other-required-packages" class="section level2">
+<h2>Install the RBiotools package and other required packages</h2>
+<ol style="list-style-type: decimal">
+<li>install the dependencies</li>
+</ol>
+<pre class="r"><code>install.packages(c(&quot;rlang&quot;,&quot;ape&quot;, &quot;fmsb&quot;, &quot;gplots&quot;, &quot;grImport&quot;, &quot;gridExtra&quot;, &quot;msa&quot;, &quot;pheatmap&quot;, &quot;RCurl&quot;, &quot;rentrez&quot;, &quot;seqinr&quot;))
+install.packages(c(&quot;lattice&quot;,&quot;mgcv&quot;,&quot;nlme&quot;,&quot;survival&quot;))
+
+#Install msa and Biostrings package via BiocManager
+if (!requireNamespace(&quot;BiocManager&quot;, quietly = TRUE))
+    install.packages(&quot;BiocManager&quot;)
+
+BiocManager::install(&quot;msa&quot;)
+BiocManager::install(&quot;Biostrings&quot;, force = TRUE)
+
+
+install.packages(&quot;installr&quot;)
+library(installr)</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>install the RBiotools package from zip source; and activate it in the workspace</li>
+</ol>
+<pre class="r"><code>install.packages(&quot;C:/dc3/RBiotools_0.5.0.tar.gz&quot;, repos = NULL, type = &quot;source&quot;)
+library(RBiotools)</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Setup the environment and working directory Choose a directory / folder that will be used for some of the figures, including Heat Maps and Genome Atlases:</li>
+</ol>
 <ul>
-<li><a href="#r-markdown"><span class="toc-section-number">0.1</span> R Markdown</a></li>
-<li><a href="#including-plots"><span class="toc-section-number">0.2</span> Including Plots</a></li>
+<li>Create this directory on your computer, if it does not already exist</li>
+<li>Make this directory the “Working Directory”</li>
 </ul>
 </div>
-
-<div id="r-markdown" class="section level2" number="0.1">
-<h2><span class="header-section-number">0.1</span> R Markdown</h2>
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
-<pre class="r"><code>summary(cars)</code></pre>
-<pre><code>##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00</code></pre>
 </div>
-<div id="including-plots" class="section level2" number="0.2">
-<h2><span class="header-section-number">0.2</span> Including Plots</h2>
-<p>You can also embed plots, for example:</p>
-<p><img src="Figs/pressure-1.png" width="1152" /></p>
-<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
+<div id="introduction-to-rbiotools-1" class="section level1">
+<h1>Introduction to RBiotools</h1>
+<ol style="list-style-type: decimal">
+<li>Choose a set of organisms What is an organism?</li>
+</ol>
+<ul>
+<li>Organisms are specified with GenBank identifiers</li>
+<li>Organisms NOT in Genbank can be added with the RBiotools addGenome function</li>
+</ul>
+<p>Let’s use a sample sets of organisms to start with:</p>
+<p>In the following statement: “myGenomes” is an arbitrary variable name “c” is an R function to “combine” things into a list Comments are for the user’s benefit and are NOT required Items in a list DO NOT have to be on separate lines</p>
 </div>
 
 
