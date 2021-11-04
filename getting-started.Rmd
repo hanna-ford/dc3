@@ -18,7 +18,7 @@ These instructions are prepared using:
 *R version 4.1.1 (2021-08-10)
 
 
-```{r verify.version, eval=TRUE, echo=TRUE}
+```{r verify.version, eval=TRUE, echo=FALSE}
 
 sessionInfo()
 
