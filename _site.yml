@@ -1,29 +1,12 @@
-name: "my-website"
+name: "RBioTools"
 output_dir: docs
 navbar:
-  title: "My Website"
+  title: "RBiotools"
   type: inverse
   left:
-    - text: "Home"
+    - text: "About"
       icon: fa-home
       href: index.html
     - text: "Getting Started"
       icon: fa-info
       href: getting-started.html
-    - text: "More"
-      icon: fa-gear
-      menu:
-        - text: "Heading 1"
-        - text: "Page A"
-          href: page-a.html
-        - text: "Page B"
-          href: page-b.html
-        - text: "---------"
-        - text: "Heading 2"
-        - text: "Page C"
-          href: page-c.html
-        - text: "Page D"
-          href: page-d.html
-  right:
-    - icon: fa-question fa-lg
-      href: https://example.com
