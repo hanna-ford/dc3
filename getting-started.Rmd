@@ -14,61 +14,71 @@ editor_options:
 knitr::opts_chunk$set(eval=TRUE, echo = FALSE)
 ```
 
-# Introduction to RBiotools
+## Introduction to RBiotools
 
 RBiotools is a package for COMPARATIVE MICROBIAL GENOMICS. RBiotools works best in the RStudio integrated development environment. RBiotools works with IDs from GenBank, the NIH genetic sequence data base, to perform analyses and create figures.
 
-## Before installation, check the version of R that is being used
-These instructions are prepared using:
-*R version 4.1.1 (2021-08-10)
+Before installation,
+
+  *   check the version of R that is being used. Note: These instructions were prepared using R version 4.1.1 (2021-08-10)
+  *   make sure you are connected to the Internet
 
 
-```{r verify.version, eval=TRUE, echo=FALSE}
+```{r verify.version, eval=FALSE, echo=FALSE}
 
 sessionInfo()
 
 ```
 
 
-## Install the RBiotools package and other required packages
+### Install the RBiotools package and other required packages
 
-1. install the dependencies
+_1. install and update dependencies_
+
 ```{r install.dependencies, eval=FALSE, echo=TRUE}
 
-install.packages(c("rlang","ape", "fmsb", "gplots", "grImport", "gridExtra", "msa", "pheatmap", "RCurl", "rentrez", "seqinr"))
-install.packages(c("lattice","mgcv","nlme","survival"))
+install.packages(c("rlang","ape", "fmsb", "gplots", "grImport", "gridExtra", "msa", "pheatmap", "RCurl", "rentrez", "seqinr"), repos =" http://cran.us.r-project.org ")
+install.packages(c("lattice","mgcv","nlme","survival"), repos =" http://cran.us.r-project.org ")
 
 #Install msa and Biostrings package via BiocManager
 if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
+    install.packages("BiocManager", repos =" http://cran.us.r-project.org ")
 
 BiocManager::install("msa")
 BiocManager::install("Biostrings", force = TRUE)
+library(msa) ## this library call is required so the dendrogram will work
 
 
-install.packages("installr")
-library(installr)
+install.packages("installr", repos =" http://cran.us.r-project.org ")
+library(installr) ## this library call is required so we can install RBiotools from the zip source
 
 
 ```
 
 
-2. install the RBiotools package from zip source; and activate it in the workspace
+_2. install the RBiotools package from zip source; and load the RBiotools library_
 
 ```{r install.packages, eval=FALSE, echo=TRUE}
 
 install.packages("C:/dc3/RBiotools_0.5.0.tar.gz", repos = NULL, type = "source")
-library(RBiotools)
 
 ```
 
-3. Setup the environment and working directory
+```{r load.RBiotools, eval=TRUE, echo=TRUE}
+
+library(RBiotools) ## this library call is required because it's the one we are primarily using
+
+```
+
+
+_3. Setup the environment and working directory_
+
 Choose a directory / folder that will be used for some of the figures, including Heat Maps and Genome Atlases:
 
-* Create this directory on your computer, if it does not already exist
-* Make this directory the "Working Directory"
+*   Create this directory on your computer, if it does not already exist
+*   Make this directory the "Working Directory"
 
-```{r working.directory, eval=FALSE, echo=FALSE}
+```{r working.directory, eval=FALSE, echo=TRUE}
 
 #this line checks to see if the folder exists; if it does not then it creates the folder; if it does then it returns "Folder exists already"
 ifelse(!dir.exists(".//r_repository//"), dir.create(".//r_repository//"), "Folder exists already")
@@ -77,27 +87,140 @@ setwd("C:/dc3/R_repository")
 
 ```
 
-# Introduction to RBiotools
+**********************************************************************************
 
-1. Choose a set of organisms
+### Introduction to RBiotools
+
+The first step is to choose a set of organisms that you would like to explore.
 What is an organism?
-* Organisms are specified with GenBank identifiers 
-* Organisms NOT in Genbank can be added with the RBiotools addGenome function
 
-Let's use a sample sets of organisms to start with:
+*   Organisms are specified with GenBank identifiers (accession IDs?)
+*   Organisms NOT in Genbank can be added with the RBiotools addGenome function
 
-In the following statement:
-   "myGenomes" is an arbitrary variable name
-   "c" is an R function to "combine" things into a list
-   Comments are for the user's benefit and are NOT required
-   Items in a list DO NOT have to be on separate lines
+Let's use a sample sets of organisms to get started. Specifically, a list of E. coli and Shigella organisms 
+
+```{r e.coli.set, eval = TRUE, echo = TRUE}
+eColi <- c(
+  "AP012306",  # Escherichia coli str. K-12 substr. MDS42 DNA         3.976 Mb - smallest chromosome
+  "KK583188",  # Escherichia coli DSM 30083 = JCM 1649 = ATCC 11775   4.907 Mb - type strain scaffold
+  "U00096",    # Escherichia coli str. K-12 substr. MG1655            4.642 Mb - first E. coli genome sequenced
+  "CP000802",  # Escherichia coli HS                                  4.644 Mb - group A representative, commensal
+  "CP000800",  # Escherichia coli E24377A                             4.980 Mb - group B1 representative
+  "AP009378",  # Escherichia coli SE15                                4.717 Mb - group B2 representative, commensal
+  "FM180568",  # Escherichia coli 0127:H6 E2348/69                    4.966 Mb - group B2 representative, enteropathogenic
+  "CU928163",  # Escherichia coli UMN026                              5.202 Mb - group D representative
+  "CP008957",  # Escherichia coli O157:H7 str. EDL933                 5.547 Mp - group E representative
+  "CP027027",  # Shigella dysenteriae strain E670/74                  5.037 Mb - Shigella dysenteria representative
+  "CP026802",  # Shigella sonnei strain ATCC 29930                    4.975 Mb - Shigella sonnei representative
+  "CP026877",  # Shigella boydii strain ATCC 35964                    5.129 Mb - Shigella boydii representative
+  "CP026793",  # Shigella flexneri strain 74-1170                     4.734 Mb - Shigella flexneri representative
+  "CP015831"   # Escherichia coli O157 strain 644-PT8                 5.831 Mb - largest chromosome
+)
+```
+
+and here we have a list of organisms that are not as closely related from the Proteobacteria classes.
+
+```{r pbac.set, eval = TRUE, echo = TRUE}
+proteobacteria <- c(
+  "CP018228", # Rhizobium leguminosarum strain Vaf-108              Phylum: Proteobacteria (alpha)
+  "CP017405", # Bordetella pertussis strain J448                    Phylum: Proteobacteria (beta)
+  "CP008957", # Escherichia coli O157:H7 str. EDL933                Phylum: Proteobacteria (gamma)
+  "HG530068", # Pseudomonas aeruginosa PA38182                      Phylum: Proteobacteria (gamma)
+  "CP002031", # Geobacter sulfurreducens KN400                      Phylum: Proteobacteria (delta)
+  "CP002332"  # Helicobacter pylori Gambia94/24                     Phylum: Proteobacteria (epsilon)
+)
+```
+
+
+### Explore functions that make plots and figures
+
+Plot a dendrogram using 16S rRNA genes
+```{r dendrogram, eval = FALSE, echo = TRUE}
+
+dendrogram16S(eColi)
+
+dendrogram16S(proteobacteria)
+
+```
 
 
 
+### Create a Genome Atlas for a genome
+
+```{r genome.atlas, eval = FALSE, echo = TRUE}
+
+createAtlas(eColi[1]) # here we index into the list and grab the first item; AP012306 or E.coli str. K-12 substr. MDS42 DNA
+
+```
+
+```{r svg2png, eval = TRUE, echo = TRUE}
+
+rsvg::rsvg_png('C:/dc3/R_repository/GenomeAtlas_AP012306.svg', 'C:/dc3/R_repository/GenomeAtlas_AP012306.png', width = 800)
+
+```
 
 
+Note: To view this Genome Atlas, which is stored as an SVG file
+
+    *   Open a browser ... Safari, Chrome, Firefox, ...
+    *   Click "File" in the menu bar and choose "Open File ..." from the pull-down menu
+    *   Navigate to your Working Directory
+    *   Double-click on "GenomeAtlas_AP012306.svg"
 
 
+### Plot amino acid usage
+Note: The plotUsage function has many options. See the plotUsage documentation.
+```{r plot.usage, eval = FALSE, echo = TRUE}
+
+plotUsage(eColi[1])
+
+```
+
+### Create a codon heat map
+Note: Heat Maps work best for groups of organisms that are NOT closely related (like our Proteobacteria group?)
+```{r plot.heatmap, eval = FALSE, echo = TRUE}
+
+plotHeatMapCodon(proteobacteria)
+
+```
+
+Note: The heat map is now in your Working Directory.
+
+     *    Click on the "Files" tab in the lower left quadrant
+     *    Navigate to your Working Directory (hint: you may need to click on the name of your Working Directory to update it)
+     *    Click on the "HeatMapCodon.png" file
+
+
+### Plot a Blast Matrix for a set of organisms
+Note: Blast Matrices work best for groups of closely related organisms (like our Proteobacteria group?)
+
+1. Build a "homology matrix", a table where
+
+  *   each table row is a protein group
+  *   each table column is an organism
+  *   each table entry is the number of an organism's proteins in a group
+
+```{r blast.matrix.1, eval = FALSE, echo = TRUE}
+
+proteinGrouping <- runLinclust(proteobacteria)
+
+```
+
+
+2. Use the homology matrix to plot the Blast Matrix
+```{r blast.matrix.2, eval = FALSE, echo = TRUE}
+
+plotBlastMatrix(proteinGrouping)
+
+```
+
+Note: To view this Homology Matrix, which is stored as an SVG file
+
+    *   Open a browser ... Safari, Chrome, Firefox, ...
+    *   Click "File" in the menu bar and choose "Open File ..." from the pull-down menu
+    *   Navigate to your Working Directory
+    *   Double-click on "BlastMatrix.svg"
+    
 
 
 
