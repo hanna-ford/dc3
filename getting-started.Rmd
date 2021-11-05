@@ -90,7 +90,7 @@ Choose a directory / folder that will be used for some of the figures, including
 *   Create this directory on your computer, if it does not already exist
 *   Make this directory the "Working Directory"
 
-```{r working.directory, eval=FALSE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
+```{r working.directory, eval=TRUE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
 
 ifelse(!dir.exists(".//r_repository//"), dir.create(".//r_repository//"), "Folder exists already")
 
@@ -109,7 +109,7 @@ What is an organism?
 *   Organisms are specified with GenBank identifiers (accession IDs?)
 *   Organisms NOT in Genbank can be added with the RBiotools addGenome function
 
-Let's use a sample sets of organisms to get started. Specifically, a list of E. coli and Shigella organisms. This set will be stored using the name `r paste("eColi")`.
+Let's use a sample sets of organisms to get started. Specifically, a list of E. coli and Shigella organisms. This set will be stored using the name `eColi`.
 
 ```{r e.coli.set, eval = TRUE, echo = TRUE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
 eColi <- c(
@@ -130,7 +130,7 @@ eColi <- c(
 )
 ```
 
-and here we have a list of organisms that are not as closely related from the Proteobacteria classes. This set will be stored using the name `r paste("proteobacteria")`.
+and here we have a list of organisms that are not as closely related from the Proteobacteria classes. This set will be stored using the name `proteobacteria`.
 
 ```{r pbac.set, eval = TRUE, echo = TRUE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
 proteobacteria <- c(
@@ -147,7 +147,7 @@ proteobacteria <- c(
 ### Explore functions that make plots and figures
 
 Plot a dendrogram using 16S rRNA genes
-```{r dendrogram, eval = TRUE, echo = TRUE}
+```{r dendrogram, eval = TRUE, echo = TRUE, fig.width=6, fig.height=6, fig.align = 'center'}
   
   #This first plot is for the eColi and Shigella organisms
   dendrogram16S(eColi)
@@ -158,12 +158,11 @@ Plot a dendrogram using 16S rRNA genes
 ```
 
 
-
 ### Create a Genome Atlas for a genome
 
 ```{r genome.atlas, eval = FALSE, echo = TRUE}
 
-  createAtlas(eColi[1]) # here we index into the list and grab the first item; AP012306 or E.coli str. K-12 substr. MDS42 DNA
+  createAtlas(eColi[1]) # here we index into the list to select the first item, AP012306.
 
 ```
 
@@ -173,19 +172,20 @@ Plot a dendrogram using 16S rRNA genes
 
 ```
 
-![Genome Atlas for eColi group](C:/dc3/R_repository/GenomeAtlas_AP012306.png)
+![](C:/dc3/R_repository/GenomeAtlas_AP012306.png)
 
-Note: To view this Genome Atlas, which is stored as an SVG file
+Note: This graphic generated at this step will be a stored as an SVG file in your Working Directory. SVG files can be accessed by:
 
-    *   Open a browser ... Safari, Chrome, Firefox, ...
-    *   Click "File" in the menu bar and choose "Open File ..." from the pull-down menu
-    *   Navigate to your Working Directory
-    *   Double-click on "GenomeAtlas_AP012306.svg"
+  *   Use your File Explorer (or equivalent) to navigate to your Working Directory
+  *   Righ-click on the file
+  *   Hover over "Open with"
+  *   Select a browser (Firefox, Google Chrome, etc...) to open the file.
 
+![](C:/dc3/R_repository/genome-atlas-reference-image.png)
 
 ### Plot amino acid usage
 Note: The plotUsage function has many options. See the plotUsage documentation.
-```{r plot.usage, eval = TRUE, echo = TRUE}
+```{r plot.usage, eval = TRUE, echo = TRUE, fig.width=6, fig.height=6, fig.align = 'center'}
 
   plotUsage(eColi[1])
 
@@ -202,13 +202,16 @@ Note: Heat Maps work best for groups of organisms that are NOT closely related (
 
 ```
 
-![Heat Map Codon for Proteobacteria group](C:/dc3/R_repository/HeatMapCodon.png)
+![](C:/dc3/R_repository/HeatMapCodon.png)
 
-Note: The heat map is now in your Working Directory.
+Note: This graphic generated at this step will be a stored as a PNG file in your Working Directory. This file can be accessed by:
 
-     *    Click on the "Files" tab in the lower left quadrant
-     *    Navigate to your Working Directory (hint: you may need to click on the name of your Working Directory to update it)
-     *    Click on the "HeatMapCodon.png" file
+  *   Go to the "Files" tab in RStudio (this tab will be in one of your IDE quadrants)
+  *   Navigate to your Working Directory
+    *   hint: you may need to refresh your Working Directory for it to appear
+  *   Click on the "HeatMapCodon.png" file
+  
+![](C:/dc3/R_repository/heat-codon-reference-image.png)
 
 
 ### Plot a Blast Matrix for a set of organisms
@@ -240,14 +243,14 @@ Note: Blast Matrices work best for groups of closely related organisms (like our
 
 ```
 
-![Blast MAtrix for eColi group](C:/dc3/R_repository/BlastMatrix.png)
+![](C:/dc3/R_repository/BlastMatrix.png)
 
-Note: To view this Homology Matrix, which is stored as an SVG file
+Note: This graphic generated at this step will be a stored as an SVG file in your Working Directory. SVG files can be accessed by:
 
-    *   Open a browser ... Safari, Chrome, Firefox, ...
-    *   Click "File" in the menu bar and choose "Open File ..." from the pull-down menu
-    *   Navigate to your Working Directory
-    *   Double-click on "BlastMatrix.svg"
+  *   Use your File Explorer (or equivalent) to navigate to your Working Directory
+  *   Righ-click on the file
+  *   Hover over "Open with"
+  *   Select a browser (Firefox, Google Chrome, etc...) to open the file.
     
 
 
