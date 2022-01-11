@@ -1,6 +1,10 @@
 ---
 title: "Intro to RBioTools"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    number_sections: true
 knit: (function(input_file, encoding) {
   out_dir <- 'docs';
   rmarkdown::render(input_file,
@@ -14,15 +18,45 @@ editor_options:
 knitr::opts_chunk$set(eval=TRUE, echo = FALSE)
 ```
 
-## Introduction to RBiotools
-
 RBiotools is a package for COMPARATIVE MICROBIAL GENOMICS. RBiotools works best in the RStudio integrated development environment. RBiotools works with IDs from GenBank, the NIH genetic sequence data base, to perform analyses and create figures.
 
-Before installation,
+# Install R, R Studio, and other setup
 
-  *   check the version of R that is being used. Note: These instructions were prepared using R version 4.1.1 (2021-08-10)
-  *   make sure you are connected to the Internet
+To get started there are several installations that must be completed. These items are listed in the order in which they should be done.
 
+1.  Install R from here: <https://www.r-project.org/>
+
+    -   Make sure that you install the correct version for your operating system.
+
+2.  Install R Studio from here: <https://www.rstudio.com/>
+
+    -   Make sure that you install the correct version for your operating system.
+
+3.  Install requirements for compiling R packages
+
+    -   If Windows, Install Rtools4 <https://cran.r-project.org/bin/windows/Rtools/rtools40.html>
+
+    -   If Mac, Install Xcode Command Line Tools
+
+        -   i\. Open a terminal window (Click Spotlight search in the top right of your screen, then search for "Terminal")
+
+        -   ii\. Copy and paste the following into the terminal `xcode-select --install`, then press Enter. You may need to provide your password to enable installing the software.
+
+        -   iii\. Follow any onscreen instructions and wait for it to finish.
+
+```{=html}
+<!-- -->
+```
+4.  Download the R-BioTools tar.gz from here: <https://github.com/hanna-ford/dc3/blob/main/docs/RBiotools_0.5.0.tar.gz>
+
+    -   Save this in the root of your working directory
+
+```{=html}
+<!-- -->
+```
+5.  Check the version of R that is being used. These instructions were prepared using R version 4.1.2 (2021-11-01); older or newer versions may behave differently.
+
+6.  Make sure you are connected to the Internet
 
 ```{r verify.version, include=FALSE}
 
@@ -30,30 +64,42 @@ sessionInfo()
 
 ```
 
+# Install the required packages and RBiotools
 
-### Install the RBiotools package and other required packages
+1.  Install some basic dependencies that are required for `RBiotools`
 
-_1. install and update dependencies_
-
-```{r install.dependencies, eval=FALSE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
+```{r install.basics, eval=FALSE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
 
   #Install some basic dependencies that are required for RBiotools
-  install.packages(c("rlang","ape", "fmsb", "gplots", "grImport", "gridExtra", "msa", "pheatmap", "RCurl", "rentrez", "seqinr"), repos =" http://cran.us.r-project.org ")
-  install.packages(c("lattice","mgcv","nlme","survival"), repos =" http://cran.us.r-project.org ")
-
-  
-  #Install msa and Biostrings package via BiocManager (and install BiocManager if it is not already installed)
-  if (!requireNamespace("BiocManager", quietly = TRUE))
-      install.packages("BiocManager", repos =" http://cran.us.r-project.org ")
-
-  BiocManager::install("msa")
-  BiocManager::install("Biostrings", force = TRUE)
-
-  #Install installr - needed to load RBiotools from tar.gz
-  install.packages("installr", repos =" http://cran.us.r-project.org ")
+  install.packages(c("rlang","ape", "data.table", "fmsb", "gplots", "ggplot2", "grImport", "gridExtra", "pheatmap", "RCurl", "rentrez", "seqinr"))
+  install.packages(c("lattice","mgcv","nlme","survival"))
 
 ```
 
+
+2.  Install `msa` and `Biostrings` package via `BiocManager` (and install `BiocManager` if it is not already installed)
+
+```{r install.msaBioC, eval=FALSE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
+
+  #Install msa and Biostrings package via BiocManager (and install BiocManager if it is not already installed)
+  if (!requireNamespace("BiocManager", quietly = TRUE))
+      install.packages("BiocManager", repos ="http://cran.us.r-project.org")
+
+  BiocManager::install("msa", force = TRUE)
+  BiocManager::install("Biostrings", force = TRUE)
+
+```
+
+3.  Install `installr` - needed to load `RBiotools` from tar.gz
+
+```{r install.installr, eval=FALSE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
+
+  #Install installr - needed to load RBiotools from tar.gz
+  install.packages("installr", repos ="http://cran.us.r-project.org")
+
+```
+
+4.  Load the following libraries:
 
 ```{r load.libraries, eval=TRUE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
 
@@ -67,14 +113,40 @@ _1. install and update dependencies_
 
 ```
 
+5.  Setup the working directory
 
-_2. install the RBiotools package from zip source; and load the RBiotools library_
+    Choose a directory / folder that will be used for some of the figures, including Heat Maps and Genome Atlases
 
-```{r install.packages, eval=FALSE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
+    1.  Create this directory on your computer, if it does not already exist
 
-  install.packages("C:/dc3/RBiotools_0.5.0.tar.gz", repos = NULL, type = "source")
+        *Suggestion: Create a directory called BMIG5101 where you can store all of your class materials for the semester.*
+
+    2.  Make this directory the "Working Directory"
+
+```{r working.directory, eval=TRUE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
+
+setwd("C://Temp//BMIG5101//") #setting the working directory; the location of your working directory is up to you, make sure to change this line, as needed. For these instructions we have placed the BMIG5101 folder in our Temp directory.
+
 
 ```
+
+```{r image.directory, include=FALSE}
+
+ifelse(!dir.exists("./r_repository/"), dir.create("./r_repository/"), "Folder exists already") #images reference in this RMarkdown file are stored here
+
+```
+
+6.  Install the RBiotools package
+
+    We will install RBioTools from zip source. Note: you may need to update the file path depending on where you saved the tar.gz from [Install R, R Studio, and other setup]; step 4.
+
+```{r install.packages, eval=FALSE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
+  
+  install.packages("RBiotools_0.5.0.tar.gz", repos = NULL, type = "source")
+
+```
+
+7.  Load RBiotools
 
 ```{r load.RBiotools, eval=TRUE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
 
@@ -82,34 +154,22 @@ _2. install the RBiotools package from zip source; and load the RBiotools librar
 
 ```
 
+------------------------------------------------------------------------
 
-_3. Setup the environment and working directory_
-
-Choose a directory / folder that will be used for some of the figures, including Heat Maps and Genome Atlases:
-
-*   Create this directory on your computer, if it does not already exist
-*   Make this directory the "Working Directory"
-
-```{r working.directory, eval=TRUE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
-
-ifelse(!dir.exists(".//r_repository//"), dir.create(".//r_repository//"), "Folder exists already")
-
-setwd("C:/dc3/R_repository") #setting the working directory
-
-```
-
-**********************************************************************************
-
-### Introduction to RBiotools
+# Identify the organisms
 
 The first step is to choose a set of organisms that you would like to explore.
 
 What is an organism?
 
-*   Organisms are specified with GenBank identifiers (accession IDs?)
-*   Organisms NOT in Genbank can be added with the RBiotools addGenome function
+-   Organisms are specified with GenBank identifiers (aka. accession IDs) Genbank: <https://www.ncbi.nlm.nih.gov/genbank/>
+-   Organisms NOT in Genbank can be added with the RBiotools addGenome function
 
-Let's use a sample sets of organisms to get started. Specifically, a list of E. coli and Shigella organisms. This set will be stored using the name `eColi`.
+## Create a list of organisms of interest
+
+Let's use a sample sets of organisms to get started.
+
+1.  Create a list of E. coli organisms. This set will be stored using the name `eColi`.
 
 ```{r e.coli.set, eval = TRUE, echo = TRUE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
 eColi <- c(
@@ -130,7 +190,7 @@ eColi <- c(
 )
 ```
 
-and here we have a list of organisms that are not as closely related from the Proteobacteria classes. This set will be stored using the name `proteobacteria`.
+2.  Create a list of organisms from the Proteobacteria classes. This set will be stored using the name `proteobacteria`.
 
 ```{r pbac.set, eval = TRUE, echo = TRUE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
 proteobacteria <- c(
@@ -143,10 +203,12 @@ proteobacteria <- c(
 )
 ```
 
+# Explore functions that make plots and figures
 
-### Explore functions that make plots and figures
+## Dendrograms
 
-Plot a dendrogram using 16S rRNA genes
+Plotting a dendrogram using 16S rRNA genes is pretty easy; however, may take several minutes to complete while data is accessed from GenBank. This will depend on how many items are in your list. Note that the proteobacteria list is shorter than the eColi list, so it completes more quickly.
+
 ```{r dendrogram, eval = TRUE, echo = TRUE, fig.width=6, fig.height=6, fig.align = 'center'}
   
   #This first plot is for the eColi and Shigella organisms
@@ -157,8 +219,9 @@ Plot a dendrogram using 16S rRNA genes
 
 ```
 
+## Genome Atlas
 
-### Create a Genome Atlas for a genome
+If you want to create a genome atlas for an organism already in a list, such as the ones we have already created (`eColi` and `proteobacteria)`, then you can index into the list for that value.
 
 ```{r genome.atlas, eval = FALSE, echo = TRUE}
 
@@ -168,60 +231,80 @@ Plot a dendrogram using 16S rRNA genes
 
 ```{r svg2png, eval=TRUE, message=FALSE, warning=FALSE, include=FALSE, results='hide'}
 
-  rsvg::rsvg_png('C:/dc3/R_repository/GenomeAtlas_AP012306.svg', 'C:/dc3/R_repository/GenomeAtlas_AP012306.png', width = 800)
+  rsvg::rsvg_png('./r_repository/GenomeAtlas_AP012306.svg', './r_repository/GenomeAtlas_AP012306.png', width = 800)
 
 ```
 
-![](C:/dc3/R_repository/GenomeAtlas_AP012306.png)
+![](./r_repository/GenomeAtlas_AP012306.png)
 
 Note: This graphic generated at this step will be a stored as an SVG file in your Working Directory. SVG files can be accessed by:
 
-  *   Use your File Explorer (or equivalent) to navigate to your Working Directory
-  *   Righ-click on the file
-  *   Hover over "Open with"
-  *   Select a browser (Firefox, Google Chrome, etc...) to open the file.
+-   Use your File Explorer (or equivalent) to navigate to your Working Directory
+-   Righ-click on the file
+-   Hover over "Open with"
+-   Select a browser (Firefox, Google Chrome, etc...) to open the file.
 
-![](C:/dc3/R_repository/genome-atlas-reference-image.png)
+![Opening an SVG using a web browser.](./r_repository/genome-atlas-reference-image.png){width="671"}
 
-### Plot amino acid usage
-Note: The plotUsage function has many options. See the plotUsage documentation.
+If you want to create a genome atlas for an item **not** already stored in a list, you can set that "on-the-fly" by locating the accession ID of interest from GenBank and entering as we have below.
+
+```{r genome.atlas.fly, eval = FALSE, echo = TRUE}
+
+  createAtlas("NC_045512") # here we hard code the accession ID from GenBank to create a genome atlas for an item not already in a list.
+
+```
+
+More on this accession ID: <https://www.ncbi.nlm.nih.gov/nuccore/NC_045512> (Hint: it's all we talk about lately)
+
+```{r svg2png.fly, eval=TRUE, message=FALSE, warning=FALSE, include=FALSE, results='hide'}
+
+  rsvg::rsvg_png('./r_repository/GenomeAtlas_NC_045512.svg', './r_repository/GenomeAtlas_NC_045512.png', width = 800)
+
+```
+
+![](./r_repository/GenomeAtlas_NC_045512.png)
+
+## Amino Acid Usage Plot
+
+The plotUsage function has many options. See the plotUsage documentation for more details and parameters.
+
 ```{r plot.usage, eval = TRUE, echo = TRUE, fig.width=6, fig.height=6, fig.align = 'center'}
 
   plotUsage(eColi[1])
 
 ```
 
+## Codon Heat Map
 
+Heat Maps work best for groups of organisms that are NOT closely related (like our Proteobacteria group)
 
-
-### Create a codon heat map
-Note: Heat Maps work best for groups of organisms that are NOT closely related (like our Proteobacteria group?)
 ```{r plot.heatmap, eval = TRUE, echo = TRUE}
 
   plotHeatMapCodon(proteobacteria)
 
 ```
 
-![](C:/dc3/R_repository/HeatMapCodon.png)
+![](./r_repository/HeatMapCodon.png)
 
 Note: This graphic generated at this step will be a stored as a PNG file in your Working Directory. This file can be accessed by:
 
-  *   Go to the "Files" tab in RStudio (this tab will be in one of your IDE quadrants)
-  *   Navigate to your Working Directory
-    *   hint: you may need to refresh your Working Directory for it to appear
-  *   Click on the "HeatMapCodon.png" file
-  
-![](C:/dc3/R_repository/heat-codon-reference-image.png)
+-   Go to the "Files" tab in RStudio (this tab will be in one of your IDE quadrants)
+-   Navigate to your Working Directory \* hint: you may need to refresh your Working Directory for it to appear
+-   Click on the "HeatMapCodon.png" file
 
+![Opening the heat codon result from within RStudio](./r_repository/heat-codon-reference-image.png){width="220"}
 
-### Plot a Blast Matrix for a set of organisms
-Note: Blast Matrices work best for groups of closely related organisms (like our eColi group?)
+## Blast Matrix
 
-1. Build a "homology matrix", a table where
+Blast Matrices work best for groups of closely related organisms (like our eColi group)
 
-  *   each table row is a protein group
-  *   each table column is an organism
-  *   each table entry is the number of an organism's proteins in a group
+1.  Build a "homology matrix", a table where:
+
+    -   each table row is a protein group
+
+    -   each table column is an organism
+
+    -   each table entry is the number of an organism's proteins in a group
 
 ```{r blast.matrix.1, eval = TRUE, echo = TRUE}
 
@@ -229,8 +312,8 @@ Note: Blast Matrices work best for groups of closely related organisms (like our
 
 ```
 
+2.  Use the homology matrix to plot the Blast Matrix
 
-2. Use the homology matrix to plot the Blast Matrix
 ```{r blast.matrix.2, eval = TRUE, echo = TRUE}
 
   plotBlastMatrix(proteinGrouping)
@@ -239,27 +322,15 @@ Note: Blast Matrices work best for groups of closely related organisms (like our
 
 ```{r svg2png2, eval=TRUE, message=FALSE, warning=FALSE, include=FALSE, results='hide'}
 
-  rsvg::rsvg_png('C:/dc3/R_repository/BlastMatrix.svg', 'C:/dc3/R_repository/BlastMatrix.png', width = 800)
+  rsvg::rsvg_png('./r_repository/BlastMatrix.svg', './r_repository/BlastMatrix.png', width = 800)
 
 ```
 
-![](C:/dc3/R_repository/BlastMatrix.png)
+![](./r_repository/BlastMatrix.png)
 
 Note: This graphic generated at this step will be a stored as an SVG file in your Working Directory. SVG files can be accessed by:
 
-  *   Use your File Explorer (or equivalent) to navigate to your Working Directory
-  *   Righ-click on the file
-  *   Hover over "Open with"
-  *   Select a browser (Firefox, Google Chrome, etc...) to open the file.
-    
-
-
-
-
-
-
-
-
-
-
-
+-   Use your File Explorer (or equivalent) to navigate to your Working Directory
+-   Righ-click on the file
+-   Hover over "Open with"
+-   Select a browser (Firefox, Google Chrome, etc...) to open the file.
