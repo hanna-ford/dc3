@@ -51,9 +51,6 @@ To get started there are several installations that must be completed. These ite
 
     -   Save this in the root of your working directory
 
-```{=html}
-<!-- -->
-```
 5.  Check the version of R that is being used. These instructions were prepared using R version 4.1.2 (2021-11-01); older or newer versions may behave differently.
 
 6.  Make sure you are connected to the Internet
@@ -75,7 +72,6 @@ sessionInfo()
   install.packages(c("lattice","mgcv","nlme","survival"))
 
 ```
-
 
 2.  Install `msa` and `Biostrings` package via `BiocManager` (and install `BiocManager` if it is not already installed)
 
