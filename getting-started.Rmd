@@ -246,15 +246,13 @@ If you want to create a genome atlas for an item **not** already stored in a lis
 
 ```{r genome.atlas.fly, eval = FALSE, echo = TRUE}
 
-  createAtlas("NC_045512") # here we hard code the accession ID from GenBank to create a genome atlas for an item not already in a list.
+  createAtlas("AP012306") # here we hard code the accession ID from GenBank to create a genome atlas for an item not already in a list.
 
 ```
 
-More on this accession ID: <https://www.ncbi.nlm.nih.gov/nuccore/NC_045512> (Hint: it's all we talk about lately)
-
 ```{r svg2png.fly, eval=TRUE, message=FALSE, warning=FALSE, include=FALSE, results='hide'}
 
-  rsvg::rsvg_png('./r_repository/GenomeAtlas_NC_045512.svg', './r_repository/GenomeAtlas_NC_045512.png', width = 800)
+  rsvg::rsvg_png('./r_repository/GenomeAtlas_AP012306.svg', './r_repository/GenomeAtlas_AP012306.png', width = 800)
 
 ```
 
@@ -288,7 +286,7 @@ Note: This graphic generated at this step will be a stored as a PNG file in your
 -   Navigate to your Working Directory \* hint: you may need to refresh your Working Directory for it to appear
 -   Click on the "HeatMapCodon.png" file
 
-![Opening the heat codon result from within RStudio](./r_repository/heat-codon-reference-image.png){width="220"}
+![Opening the heat codon result from within RStudio.](./r_repository/heat-codon-reference-image.png){width="220"}
 
 ## Blast Matrix
 
