@@ -521,7 +521,6 @@ div.tocify {
 ## Creating dendrogram for 14 16S rRNA sequences
 ## use default substitution matrix</code></pre>
 <p><img src="getting-started_files/figure-html/dendrogram.eC-1.png" width="576" style="display: block; margin: auto;" /></p>
-<p><img src="./r_repository/dendrogram-1.png" /></p>
 <pre class="r"><code>  #The second plot is for the proteobacteria organisms
   dendrogram16S(proteobacteria)</code></pre>
 <pre><code>## Downloading genome data for organism with accession ID: CP018228 
@@ -537,12 +536,15 @@ div.tocify {
 ## Creating dendrogram for 6 16S rRNA sequences
 ## use default substitution matrix</code></pre>
 <p><img src="getting-started_files/figure-html/dendrogram.pb-1.png" width="576" style="display: block; margin: auto;" /></p>
-<p><img src="./r_repository/dendrogram-2.png" /></p>
 </div>
 <div id="genome-atlas" class="section level2" number="4.2">
 <h2><span class="header-section-number">4.2</span> Genome Atlas</h2>
 <p>If you want to create a genome atlas for an organism already in a list, such as the ones we have already created (<code>eColi</code> and <code>proteobacteria)</code>, then you can index into the list for that value.</p>
 <pre class="r"><code>  createAtlas(eColi[1]) # here we index into the list to select the first item, AP012306.</code></pre>
+<pre><code>## Writing SVG code for genome with accession ID: AP012306 
+## Calling protein genes for accession ID: AP012306 
+## Calling type TSU rRNA genes for genome with accession ID: AP012306
+## Calling type LSU rRNA genes for genome with accession ID: AP012306</code></pre>
 <p><img src="r_repository/GenomeAtlas_AP012306.png" /></p>
 <p>Note: This graphic generated at this step will be a stored as an SVG file in your Working Directory. SVG files can be accessed by:</p>
 <ul>
@@ -562,22 +564,8 @@ div.tocify {
 <h2><span class="header-section-number">4.3</span> Amino Acid Usage Plot</h2>
 <p>The <code>plotUsage</code> function has many options. See the <code>plotUsage</code> documentation for more details and parameters.</p>
 <pre class="r"><code>  plotUsage(eColi[1])</code></pre>
-<pre><code>## ----------
-## Predicting protein genes for genome with accession ID: AP012306 
-## Request: Single Genome, Phase: Training
-## Reading in the sequence(s) to train ... 3976195 bp sequence created, 51.14% GC
-## Looking for GC bias in different frames ... frame bias scores: 1.56 0.182 1.25 
-## Building initial set of genes to train from ...
-##  done!
-## Creating coding model and scoring nodes ... done!
-## Examining upstream regions and training starts ...
-##  done!
-## Request: Single Genome, Phase: Gene Finding
-## Finding genes in sequence # 1 (3976195 bp) ... 
-##  done!  3621 genes predicted
-## Plotting AA usage across 3621 proteins</code></pre>
-<p><img src="getting-started_files/figure-html/plot.usage-1.png" width="576" style="display: block; margin: auto;" /></p>
-<p><img src="./r_repository/plot.usage-1.png" /></p>
+<pre><code>## Plotting AA usage across 3621 proteins</code></pre>
+<p><img src="getting-started_files/figure-html/plot.usage-1.png" width="672" /></p>
 </div>
 <div id="codon-heat-map" class="section level2" number="4.4">
 <h2><span class="header-section-number">4.4</span> Codon Heat Map</h2>
@@ -625,7 +613,7 @@ div.tocify {
 ## Calling protein genes for accession ID: CP026877 
 ## Calling protein genes for accession ID: CP026793 
 ## Calling protein genes for accession ID: CP015831 
-## Number of ungapped alignments: 112023
+## Number of ungapped alignments: 112022
 ## Number of Smith-Waterman alignments: 2514</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>Use the homology matrix to plot the Blast Matrix</li>
