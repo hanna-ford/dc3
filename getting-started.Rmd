@@ -128,7 +128,7 @@ setwd("C://Temp//BMIG5101//") #setting the working directory; the location of yo
 
 ```
 
-```{r image.directory, include=FALSE}
+```{r image.directory, eval=TRUE, echo=FALSE, error=FALSE, warning=FALSE, message=FALSE}
 
 ifelse(!dir.exists("./r_repository/"), dir.create("./r_repository/"), "Folder exists already") #images reference in this RMarkdown file are stored here
 
