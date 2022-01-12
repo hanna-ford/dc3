@@ -378,9 +378,12 @@ div.tocify {
 <ol start="4" style="list-style-type: decimal">
 <li><p>Download the R-BioTools tar.gz from here: <a href="https://github.com/hanna-ford/dc3/blob/main/docs/RBiotools_0.5.0.tar.gz" class="uri">https://github.com/hanna-ford/dc3/blob/main/docs/RBiotools_0.5.0.tar.gz</a></p>
 <ul>
-<li>Save this in the root of your working directory</li>
+<li>Save this tar.gz file in the root of your working directory</li>
 </ul></li>
-<li><p>Check the version of R that is being used. These instructions were prepared using R version 4.1.2 (2021-11-01); older or newer versions may behave differently.</p></li>
+<li><p>Check the version of R that is being used. These instructions were prepared using R version 4.1.2 (2021-11-01); older or newer versions may behave differently.</p>
+<ul>
+<li>You can check your version by running <code>sessionInfo()</code> in your R Console.</li>
+</ul></li>
 <li><p>Make sure you are connected to the Internet</p></li>
 </ol>
 </div>
@@ -426,12 +429,12 @@ div.tocify {
 </ol>
 <pre class="r"><code>setwd(&quot;C://Temp//BMIG5101//&quot;) #setting the working directory; the location of your working directory is up to you, make sure to change this line, as needed. For these instructions we have placed the BMIG5101 folder in our Temp directory.</code></pre>
 <ol start="6" style="list-style-type: decimal">
-<li><p>Install the RBiotools package</p>
-<p>We will install RBioTools from zip source. Note: you may need to update the file path depending on where you saved the tar.gz from <a href="#install-r-r-studio-and-other-setup">Install R, R Studio, and other setup</a>; step 4.</p></li>
+<li><p>Install the <code>RBiotools</code> package</p>
+<p>We will install <code>RBioTools</code> from zip source. Note: you may need to update the file path depending on where you saved the tar.gz from <a href="#install-r-r-studio-and-other-setup">Install R, R Studio, and other setup</a>; step 4.</p></li>
 </ol>
 <pre class="r"><code>  install.packages(&quot;RBiotools_0.5.0.tar.gz&quot;, repos = NULL, type = &quot;source&quot;)</code></pre>
 <ol start="7" style="list-style-type: decimal">
-<li>Load RBiotools</li>
+<li>Load the <code>RBiotools</code> library</li>
 </ol>
 <pre class="r"><code>  library(RBiotools) </code></pre>
 <hr />
@@ -517,7 +520,8 @@ div.tocify {
 ## Calling type &#39;SSU&#39; rRNA genes for genome with accession ID: CP015831
 ## Creating dendrogram for 14 16S rRNA sequences
 ## use default substitution matrix</code></pre>
-<p><img src="getting-started_files/figure-html/dendrogram-1.png" width="576" style="display: block; margin: auto;" /></p>
+<p><img src="getting-started_files/figure-html/dendrogram.eC-1.png" width="576" style="display: block; margin: auto;" /></p>
+<p><img src="./r_repository/dendrogram-1.png" /></p>
 <pre class="r"><code>  #The second plot is for the proteobacteria organisms
   dendrogram16S(proteobacteria)</code></pre>
 <pre><code>## Downloading genome data for organism with accession ID: CP018228 
@@ -532,7 +536,8 @@ div.tocify {
 ## Calling type &#39;SSU&#39; rRNA genes for genome with accession ID: CP002332
 ## Creating dendrogram for 6 16S rRNA sequences
 ## use default substitution matrix</code></pre>
-<p><img src="getting-started_files/figure-html/dendrogram-2.png" width="576" style="display: block; margin: auto;" /></p>
+<p><img src="getting-started_files/figure-html/dendrogram.pb-1.png" width="576" style="display: block; margin: auto;" /></p>
+<p><img src="./r_repository/dendrogram-2.png" /></p>
 </div>
 <div id="genome-atlas" class="section level2" number="4.2">
 <h2><span class="header-section-number">4.2</span> Genome Atlas</h2>
@@ -552,11 +557,10 @@ div.tocify {
 </div>
 <p>If you want to create a genome atlas for an item <strong>not</strong> already stored in a list, you can set that “on-the-fly” by locating the accession ID of interest from GenBank and entering as we have below.</p>
 <pre class="r"><code>  createAtlas(&quot;AP012306&quot;) # here we hard code the accession ID from GenBank to create a genome atlas for an item not already in a list.</code></pre>
-<p><img src="r_repository/GenomeAtlas_NC_045512.png" /></p>
 </div>
 <div id="amino-acid-usage-plot" class="section level2" number="4.3">
 <h2><span class="header-section-number">4.3</span> Amino Acid Usage Plot</h2>
-<p>The plotUsage function has many options. See the plotUsage documentation for more details and parameters.</p>
+<p>The <code>plotUsage</code> function has many options. See the <code>plotUsage</code> documentation for more details and parameters.</p>
 <pre class="r"><code>  plotUsage(eColi[1])</code></pre>
 <pre><code>## ----------
 ## Predicting protein genes for genome with accession ID: AP012306 
@@ -573,6 +577,7 @@ div.tocify {
 ##  done!  3621 genes predicted
 ## Plotting AA usage across 3621 proteins</code></pre>
 <p><img src="getting-started_files/figure-html/plot.usage-1.png" width="576" style="display: block; margin: auto;" /></p>
+<p><img src="./r_repository/plot.usage-1.png" /></p>
 </div>
 <div id="codon-heat-map" class="section level2" number="4.4">
 <h2><span class="header-section-number">4.4</span> Codon Heat Map</h2>
@@ -593,7 +598,7 @@ div.tocify {
 </ul>
 <div class="figure">
 <img src="r_repository/heat-codon-reference-image.png" width="220" alt="" />
-<p class="caption">Opening the heat codon result from within RStudio</p>
+<p class="caption">Opening the heat codon result from within RStudio.</p>
 </div>
 </div>
 <div id="blast-matrix" class="section level2" number="4.5">
@@ -620,7 +625,7 @@ div.tocify {
 ## Calling protein genes for accession ID: CP026877 
 ## Calling protein genes for accession ID: CP026793 
 ## Calling protein genes for accession ID: CP015831 
-## Number of ungapped alignments: 112022
+## Number of ungapped alignments: 112023
 ## Number of Smith-Waterman alignments: 2514</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>Use the homology matrix to plot the Blast Matrix</li>

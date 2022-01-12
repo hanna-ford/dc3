@@ -49,9 +49,11 @@ To get started there are several installations that must be completed. These ite
 ```
 4.  Download the R-BioTools tar.gz from here: <https://github.com/hanna-ford/dc3/blob/main/docs/RBiotools_0.5.0.tar.gz>
 
-    -   Save this in the root of your working directory
+    -   Save this tar.gz file in the root of your working directory
 
 5.  Check the version of R that is being used. These instructions were prepared using R version 4.1.2 (2021-11-01); older or newer versions may behave differently.
+
+    -   You can check your version by running `sessionInfo()` in your R Console.
 
 6.  Make sure you are connected to the Internet
 
@@ -132,9 +134,9 @@ ifelse(!dir.exists("./r_repository/"), dir.create("./r_repository/"), "Folder ex
 
 ```
 
-6.  Install the RBiotools package
+6.  Install the `RBiotools` package
 
-    We will install RBioTools from zip source. Note: you may need to update the file path depending on where you saved the tar.gz from [Install R, R Studio, and other setup]; step 4.
+    We will install `RBioTools` from zip source. Note: you may need to update the file path depending on where you saved the tar.gz from [Install R, R Studio, and other setup]; step 4.
 
 ```{r install.packages, eval=FALSE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
   
@@ -142,7 +144,7 @@ ifelse(!dir.exists("./r_repository/"), dir.create("./r_repository/"), "Folder ex
 
 ```
 
-7.  Load RBiotools
+7.  Load the `RBiotools` library
 
 ```{r load.RBiotools, eval=TRUE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
 
@@ -205,15 +207,22 @@ proteobacteria <- c(
 
 Plotting a dendrogram using 16S rRNA genes is pretty easy; however, may take several minutes to complete while data is accessed from GenBank. This will depend on how many items are in your list. Note that the proteobacteria list is shorter than the eColi list, so it completes more quickly.
 
-```{r dendrogram, eval = TRUE, echo = TRUE, fig.width=6, fig.height=6, fig.align = 'center'}
+```{r dendrogram.eC, eval = TRUE, echo=TRUE, fig.height=6, fig.width=6, fig.align = 'center'}
   
   #This first plot is for the eColi and Shigella organisms
   dendrogram16S(eColi)
 
+```
+
+![](./r_repository/dendrogram-1.png)
+
+```{r dendrogram.pb, eval = TRUE, echo = TRUE, fig.width=6, fig.height=6, fig.align = 'center'}
   #The second plot is for the proteobacteria organisms
   dendrogram16S(proteobacteria)
 
 ```
+
+![](./r_repository/dendrogram-2.png)
 
 ## Genome Atlas
 
@@ -250,23 +259,17 @@ If you want to create a genome atlas for an item **not** already stored in a lis
 
 ```
 
-```{r svg2png.fly, eval=TRUE, message=FALSE, warning=FALSE, include=FALSE, results='hide'}
-
-  rsvg::rsvg_png('./r_repository/GenomeAtlas_AP012306.svg', './r_repository/GenomeAtlas_AP012306.png', width = 800)
-
-```
-
-![](./r_repository/GenomeAtlas_NC_045512.png)
-
 ## Amino Acid Usage Plot
 
-The plotUsage function has many options. See the plotUsage documentation for more details and parameters.
+The `plotUsage` function has many options. See the `plotUsage` documentation for more details and parameters.
 
 ```{r plot.usage, eval = TRUE, echo = TRUE, fig.width=6, fig.height=6, fig.align = 'center'}
 
   plotUsage(eColi[1])
 
 ```
+
+![](./r_repository/plot.usage-1.png)
 
 ## Codon Heat Map
 

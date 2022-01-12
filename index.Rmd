@@ -17,4 +17,4 @@ Imports:    ape, Biostrings, data.table, fmsb, ggplot2, gplots, graphics,grid, g
 LinkingTo:    Rcpp
 NeedsCompilation: yes
 
-Please see the manual for more details.
+Please see the manual for more details (available here: https://github.com/hanna-ford/dc3/blob/main/RBiotools-manual.pdf)
