@@ -482,14 +482,10 @@ div.tocify {
   &quot;CP002332&quot;  # Helicobacter pylori Gambia94/24                     Phylum: Proteobacteria (epsilon)
 )</code></pre>
 </div>
-</div>
-<div id="explore-functions-that-make-plots-and-figures" class="section level1" number="4">
-<h1><span class="header-section-number">4</span> Explore functions that make plots and figures</h1>
-<div id="dendrograms" class="section level2" number="4.1">
-<h2><span class="header-section-number">4.1</span> Dendrograms</h2>
-<p>Plotting a dendrogram using 16S rRNA genes is pretty easy; however, may take several minutes to complete while data is accessed from GenBank. This will depend on how many items are in your list. Note that the proteobacteria list is shorter than the eColi list, so it completes more quickly.</p>
-<pre class="r"><code>  #This first plot is for the eColi and Shigella organisms
-  dendrogram16S(eColi)</code></pre>
+<div id="verify-list-items-by-downloading-genomic-information-from-genbank" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Verify list items by downloading genomic information from GenBank</h2>
+<p>Once you have a sample set of organisms in a list, use <code>downloadGenBank()</code> to create a data frame with the details of the organisms.</p>
+<pre class="r"><code>downloadGenBank(eColi)</code></pre>
 <pre><code>## Initializing RBiotools
 ## Downloading genome data for organism with accession ID: AP012306 
 ## Downloading genome data for organism with accession ID: KK583188 
@@ -504,8 +500,29 @@ div.tocify {
 ## Downloading genome data for organism with accession ID: CP026802 
 ## Downloading genome data for organism with accession ID: CP026877 
 ## Downloading genome data for organism with accession ID: CP026793 
-## Downloading genome data for organism with accession ID: CP015831 
-## Calling type &#39;SSU&#39; rRNA genes for genome with accession ID: AP012306
+## Downloading genome data for organism with accession ID: CP015831</code></pre>
+<p>The results will be stored in two separate data frames: orgData.df and orgName.df; both can be opened from the <em>Environment</em> pane.</p>
+<p>Click on the data frame in the Environment pane to view the contents or type <code>View(orgData.df)</code> directly into the Console.</p>
+<p>Follow the same steps to view the contents of the <code>orgName.df</code> data frame</p>
+<p><img src="r_repository/orgdata-details.png" /></p>
+<p>If you have multiple lists, note that the results are not overwritten if you run this again but are appended to the same data frame.</p>
+<pre class="r"><code>downloadGenBank(proteobacteria)</code></pre>
+<pre><code>## Downloading genome data for organism with accession ID: CP018228 
+## Downloading genome data for organism with accession ID: CP017405 
+## Genome data for accession ID: CP008957 has already downloaded
+## Downloading genome data for organism with accession ID: HG530068 
+## Downloading genome data for organism with accession ID: CP002031 
+## Downloading genome data for organism with accession ID: CP002332</code></pre>
+</div>
+</div>
+<div id="explore-functions-that-make-plots-and-figures" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Explore functions that make plots and figures</h1>
+<div id="dendrograms" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Dendrograms</h2>
+<p>Plotting a dendrogram using 16S rRNA genes is pretty easy; however, may take several minutes to complete while data is accessed from GenBank. This will depend on how many items are in your list. Note that the proteobacteria list is shorter than the eColi list, so it completes more quickly.</p>
+<pre class="r"><code>  #This first plot is for the eColi and Shigella organisms
+  dendrogram16S(eColi)</code></pre>
+<pre><code>## Calling type &#39;SSU&#39; rRNA genes for genome with accession ID: AP012306
 ## Calling type &#39;SSU&#39; rRNA genes for genome with accession ID: KK583188
 ## Calling type &#39;SSU&#39; rRNA genes for genome with accession ID: U00096
 ## Calling type &#39;SSU&#39; rRNA genes for genome with accession ID: CP000802
@@ -524,12 +541,7 @@ div.tocify {
 <p><img src="getting-started_files/figure-html/dendrogram.eC-1.png" width="576" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>  #The second plot is for the proteobacteria organisms
   dendrogram16S(proteobacteria)</code></pre>
-<pre><code>## Downloading genome data for organism with accession ID: CP018228 
-## Downloading genome data for organism with accession ID: CP017405 
-## Downloading genome data for organism with accession ID: HG530068 
-## Downloading genome data for organism with accession ID: CP002031 
-## Downloading genome data for organism with accession ID: CP002332 
-## Calling type &#39;SSU&#39; rRNA genes for genome with accession ID: CP018228
+<pre><code>## Calling type &#39;SSU&#39; rRNA genes for genome with accession ID: CP018228
 ## Calling type &#39;SSU&#39; rRNA genes for genome with accession ID: CP017405
 ## Calling type &#39;SSU&#39; rRNA genes for genome with accession ID: HG530068
 ## Calling type &#39;SSU&#39; rRNA genes for genome with accession ID: CP002031

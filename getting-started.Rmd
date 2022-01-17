@@ -117,13 +117,14 @@ sessionInfo()
 
     1.  Create this directory on your computer, if it does not already exist
 
-        *Suggestion: Create a directory called BMIG5101 where you can store all of your class materials for the semester.*
+  *Suggestion:* Create a directory called BMIG5101 where you can store all of your class materials for the semester.*
 
     2.  Make this directory the "Working Directory"
+  *Setting the working directory:* the location of your working directory is up to you; however, make sure to change the code below, as needed. For these instructions we have placed the BMIG5101 folder in our Temp directory.
 
 ```{r working.directory, eval=TRUE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
 
-setwd("C://Temp//BMIG5101//") #setting the working directory; the location of your working directory is up to you, make sure to change this line, as needed. For these instructions we have placed the BMIG5101 folder in our Temp directory.
+setwd("C://Temp//BMIG5101//")
 
 
 ```
@@ -200,6 +201,33 @@ proteobacteria <- c(
   "CP002332"  # Helicobacter pylori Gambia94/24                     Phylum: Proteobacteria (epsilon)
 )
 ```
+
+## Verify list items by downloading genomic information from GenBank
+
+Once you have a sample set of organisms in a list, use `downloadGenBank()` to create a data frame with the details of the organisms.
+
+```{r ver.e.coli, eval = TRUE, echo = TRUE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
+
+downloadGenBank(eColi)
+
+```
+
+The results will be stored in two separate data frames: orgData.df and orgName.df; both can be opened from the *Environment* pane. 
+
+Click on the data frame in the Environment pane to view the contents or type `View(orgData.df)` directly into the Console.
+
+Follow the same steps to view the contents of the `orgName.df` data frame
+
+![](./r_repository/orgdata-details.png)
+
+If you have multiple lists, note that the results are not overwritten if you run this again but are appended to the same data frame.
+
+```{r ver.proteobacteria, eval = TRUE, echo = TRUE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
+
+downloadGenBank(proteobacteria)
+
+```
+
 
 # Explore functions that make plots and figures
 
