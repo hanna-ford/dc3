@@ -373,12 +373,17 @@ div.tocify {
 <li><p>iii. Follow any onscreen instructions and wait for it to finish.</p></li>
 </ul></li>
 </ul></li>
-</ol>
-<!-- -->
-<ol start="4" style="list-style-type: decimal">
-<li><p>Download the R-BioTools tar.gz from here: <a href="https://github.com/hanna-ford/dc3/blob/main/docs/RBiotools_0.5.0.tar.gz" class="uri">https://github.com/hanna-ford/dc3/blob/main/docs/RBiotools_0.5.0.tar.gz</a></p>
+<li><p>Designate a directory on your computer where you will store your work, this will be your <strong>Working Directory.</strong></p>
 <ul>
-<li>Save this tar.gz file in the root of your working directory</li>
+<li><em>Suggestion:</em> Create a directory called BMIG5101 where you can store all of your class materials for the semester.</li>
+</ul></li>
+<li><p>Download the RBioTools tar.gz from here: <a href="https://github.com/hanna-ford/dc3/blob/main/docs/RBiotools_0.5.0.tar.gz" class="uri">https://github.com/hanna-ford/dc3/blob/main/docs/RBiotools_0.5.0.tar.gz</a></p>
+<ul>
+<li>Save this tar.gz file in the root of your Working Directory</li>
+</ul></li>
+<li><p>Download the <code>getting-started.R</code> script from here: <a href="https://github.com/hanna-ford/dc3/blob/main/docs/getting-started.R" class="uri">https://github.com/hanna-ford/dc3/blob/main/docs/getting-started.R</a></p>
+<ul>
+<li>Save this R script in the root of your Working Directory</li>
 </ul></li>
 <li><p>Check the version of R that is being used. These instructions were prepared using R version 4.1.2 (2021-11-01); older or newer versions may behave differently.</p>
 <ul>
@@ -394,6 +399,7 @@ div.tocify {
 </ol>
 <pre class="r"><code>  #Install some basic dependencies that are required for RBiotools
   install.packages(c(&quot;rlang&quot;,&quot;ape&quot;, &quot;data.table&quot;, &quot;fmsb&quot;, &quot;gplots&quot;, &quot;ggplot2&quot;, &quot;grImport&quot;, &quot;gridExtra&quot;, &quot;pheatmap&quot;, &quot;RCurl&quot;, &quot;rentrez&quot;, &quot;seqinr&quot;))
+  
   install.packages(c(&quot;lattice&quot;,&quot;mgcv&quot;,&quot;nlme&quot;,&quot;survival&quot;))</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>Install <code>msa</code> and <code>Biostrings</code> package via <code>BiocManager</code> (and install <code>BiocManager</code> if it is not already installed)</li>
@@ -403,9 +409,10 @@ div.tocify {
       install.packages(&quot;BiocManager&quot;, repos =&quot;http://cran.us.r-project.org&quot;)
 
   BiocManager::install(&quot;msa&quot;, force = TRUE)
+  
   BiocManager::install(&quot;Biostrings&quot;, force = TRUE)</code></pre>
 <ol start="3" style="list-style-type: decimal">
-<li>Install <code>installr</code> - needed to load <code>RBiotools</code> from tar.gz</li>
+<li>Install <code>installr</code> - needed to compile <code>RBiotools</code> from tar.gz</li>
 </ol>
 <pre class="r"><code>  #Install installr - needed to load RBiotools from tar.gz
   install.packages(&quot;installr&quot;, repos =&quot;http://cran.us.r-project.org&quot;)</code></pre>
@@ -419,19 +426,18 @@ div.tocify {
   ## this library call is required so we can install RBiotools from the zip source
   library(installr) </code></pre>
 <ol start="5" style="list-style-type: decimal">
-<li><p>Setup the working directory</p>
-<p>Choose a directory / folder that will be used for some of the figures, including Heat Maps and Genome Atlases</p>
-<ol style="list-style-type: decimal">
-<li><p>Create this directory on your computer, if it does not already exist</p>
-<p><em>Suggestion: Create a directory called BMIG5101 where you can store all of your class materials for the semester.</em></p></li>
-<li><p>Make this directory the “Working Directory”</p></li>
-</ol></li>
+<li><p>Set the Working Directory</p>
+<ul>
+<li><p><em>Setting the working directory:</em> In 1.1.4 of the previous section, <a href="#install-r-r-studio-and-other-setup">Install R, R Studio, and other setup</a>, you designated a folder on your computer as your <strong>Working Directory.</strong></p></li>
+<li><p>In this step we assign this as the working directory in R. Be sure to change the code below, as needed, so that the path is correct.</p></li>
+<li><p><em>Note:</em> For these instructions we have placed the BMIG5101 folder in our C:/Temp directory as demonstration. Please make sure you select a place that makes sense in your file structure.</p></li>
+</ul></li>
 </ol>
-<pre class="r"><code>setwd(&quot;C://Temp//BMIG5101//&quot;) #setting the working directory; the location of your working directory is up to you, make sure to change this line, as needed. For these instructions we have placed the BMIG5101 folder in our Temp directory.</code></pre>
+<pre class="r"><code>setwd(&quot;C://Temp//BMIG5101//&quot;)</code></pre>
 <pre><code>## [1] &quot;Folder exists already&quot;</code></pre>
 <ol start="6" style="list-style-type: decimal">
 <li><p>Install the <code>RBiotools</code> package</p>
-<p>We will install <code>RBioTools</code> from zip source. Note: you may need to update the file path depending on where you saved the tar.gz from <a href="#install-r-r-studio-and-other-setup">Install R, R Studio, and other setup</a>; step 4.</p></li>
+<p>We will install <code>RBioTools</code> from zip source. Note: you may need to update the file path depending on where you saved the tar.gz from <a href="#install-r-r-studio-and-other-setup">Install R, R Studio, and other setup</a>; step 5.</p></li>
 </ol>
 <pre class="r"><code>  install.packages(&quot;RBiotools_0.5.0.tar.gz&quot;, repos = NULL, type = &quot;source&quot;)</code></pre>
 <ol start="7" style="list-style-type: decimal">

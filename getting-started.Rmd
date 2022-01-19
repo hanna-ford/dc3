@@ -44,24 +44,30 @@ To get started there are several installations that must be completed. These ite
 
         -   iii\. Follow any onscreen instructions and wait for it to finish.
 
-```{=html}
-<!-- -->
-```
-4.  Download the R-BioTools tar.gz from here: <https://github.com/hanna-ford/dc3/blob/main/docs/RBiotools_0.5.0.tar.gz>
+4.  Designate a directory on your computer where you will store your work, this will be your **Working Directory.**
 
-    -   Save this tar.gz file in the root of your working directory
+    -   *Suggestion:* Create a directory called BMIG5101 where you can store all of your class materials for the semester.
 
-5.  Check the version of R that is being used. These instructions were prepared using R version 4.1.2 (2021-11-01); older or newer versions may behave differently.
+5.  Download the RBioTools tar.gz from here: <https://github.com/hanna-ford/dc3/blob/main/docs/RBiotools_0.5.0.tar.gz>
+
+    -   Save this tar.gz file in the root of your Working Directory
+
+6.  Download the `getting-started.R` script from here:
+<https://github.com/hanna-ford/dc3/blob/main/docs/getting-started.R>
+
+    -   Save this R script in the root of your Working Directory
+
+7.  Check the version of R that is being used. These instructions were prepared using R version 4.1.2 (2021-11-01); older or newer versions may behave differently.
 
     -   You can check your version by running `sessionInfo()` in your R Console.
-
-6.  Make sure you are connected to the Internet
 
 ```{r verify.version, include=FALSE}
 
 sessionInfo()
 
 ```
+
+8.  Make sure you are connected to the Internet
 
 # Install the required packages and RBiotools
 
@@ -71,6 +77,7 @@ sessionInfo()
 
   #Install some basic dependencies that are required for RBiotools
   install.packages(c("rlang","ape", "data.table", "fmsb", "gplots", "ggplot2", "grImport", "gridExtra", "pheatmap", "RCurl", "rentrez", "seqinr"))
+  
   install.packages(c("lattice","mgcv","nlme","survival"))
 
 ```
@@ -84,11 +91,12 @@ sessionInfo()
       install.packages("BiocManager", repos ="http://cran.us.r-project.org")
 
   BiocManager::install("msa", force = TRUE)
+  
   BiocManager::install("Biostrings", force = TRUE)
 
 ```
 
-3.  Install `installr` - needed to load `RBiotools` from tar.gz
+3.  Install `installr` - needed to compile `RBiotools` from tar.gz
 
 ```{r install.installr, eval=FALSE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
 
@@ -111,16 +119,13 @@ sessionInfo()
 
 ```
 
-5.  Setup the working directory
+5.  Set the Working Directory
 
-    Choose a directory / folder that will be used for some of the figures, including Heat Maps and Genome Atlases
+    -   *Setting the working directory:* In 1.1.4 of the previous section, [Install R, R Studio, and other setup], you designated a folder on your computer as your **Working Directory.**
 
-    1.  Create this directory on your computer, if it does not already exist
+    -   In this step we assign this as the working directory in R. Be sure to change the code below, as needed, so that the path is correct.
 
-  *Suggestion:* Create a directory called BMIG5101 where you can store all of your class materials for the semester.*
-
-    2.  Make this directory the "Working Directory"
-  *Setting the working directory:* the location of your working directory is up to you; however, make sure to change the code below, as needed. For these instructions we have placed the BMIG5101 folder in our Temp directory.
+    -   *Note:* For these instructions we have placed the BMIG5101 folder in our C:/Temp directory as demonstration. Please make sure you select a place that makes sense in your file structure.
 
 ```{r working.directory, eval=TRUE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
 
@@ -137,7 +142,7 @@ ifelse(!dir.exists("./r_repository/"), dir.create("./r_repository/"), "Folder ex
 
 6.  Install the `RBiotools` package
 
-    We will install `RBioTools` from zip source. Note: you may need to update the file path depending on where you saved the tar.gz from [Install R, R Studio, and other setup]; step 4.
+    We will install `RBioTools` from zip source. Note: you may need to update the file path depending on where you saved the tar.gz from [Install R, R Studio, and other setup]; step 5.
 
 ```{r install.packages, eval=FALSE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
   
@@ -212,7 +217,7 @@ downloadGenBank(eColi)
 
 ```
 
-The results will be stored in two separate data frames: orgData.df and orgName.df; both can be opened from the *Environment* pane. 
+The results will be stored in two separate data frames: orgData.df and orgName.df; both can be opened from the *Environment* pane.
 
 Click on the data frame in the Environment pane to view the contents or type `View(orgData.df)` directly into the Console.
 
@@ -228,7 +233,6 @@ downloadGenBank(proteobacteria)
 
 ```
 
-
 # Explore functions that make plots and figures
 
 ## Dendrograms
@@ -242,15 +246,11 @@ Plotting a dendrogram using 16S rRNA genes is pretty easy; however, may take sev
 
 ```
 
-
-
 ```{r dendrogram.pb, eval=TRUE, echo=TRUE, fig.height=6, fig.width=6, fig.align = 'center'}
   #The second plot is for the proteobacteria organisms
   dendrogram16S(proteobacteria)
 
 ```
-
-
 
 ## Genome Atlas
 
@@ -296,8 +296,6 @@ The `plotUsage` function has many options. See the `plotUsage` documentation for
   plotUsage(eColi[1])
 
 ```
-
-
 
 ## Codon Heat Map
 
