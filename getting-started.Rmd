@@ -53,8 +53,9 @@ To get started there are several installations that must be completed. These ite
     -   Save this tar.gz file in the root of your Working Directory
 
 6.  Download the `getting-started.R` script from here:
-<https://github.com/hanna-ford/dc3/blob/main/getting-started.R>
-
+<https://raw.githubusercontent.com/hanna-ford/dc3/main/docs/getting-started.R>
+    
+    -   When you click on the above link the code will open in browser window; right click in that window and select, "Save as..." (or "Save page as ..."); make sure that the save as type is set to "Text Document"
     -   Save this R script in the root of your Working Directory
 
 7.  Check the version of R that is being used. These instructions were prepared using R version 4.1.2 (2021-11-01); older or newer versions may behave differently.
@@ -68,6 +69,10 @@ sessionInfo()
 ```
 
 8.  Make sure you are connected to the Internet
+
+9.  Open R Studio
+
+    -   Go to File --> Open File --> Navigate to your working folder; and open "getting-started.R"
 
 # Install the required packages and RBiotools
 
