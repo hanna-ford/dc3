@@ -53,7 +53,7 @@ To get started there are several installations that must be completed. These ite
     -   Save this tar.gz file in the root of your Working Directory
 
 6.  Download the `getting-started.R` script from here:
-<https://github.com/hanna-ford/dc3/blob/main/docs/getting-started.R>
+<https://github.com/hanna-ford/dc3/blob/main/getting-started.R>
 
     -   Save this R script in the root of your Working Directory
 
