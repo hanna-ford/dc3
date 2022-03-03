@@ -151,7 +151,7 @@ ifelse(!dir.exists("./r_repository/"), dir.create("./r_repository/"), "Folder ex
 
 ```{r install.packages, eval=FALSE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
   
-  install.packages("RBiotools_0.5.0.tar.gz", repos = NULL, type = "source")
+  install.packages("RBiotools_0.5.2.tar.gz", repos = NULL, type = "source")
 
 ```
 

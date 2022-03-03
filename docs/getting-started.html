@@ -13,7 +13,7 @@
 
 <title>Intro to RBioTools</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.12/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -65,6 +65,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -85,6 +86,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -310,7 +314,7 @@ div.tocify {
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -444,7 +448,7 @@ div.tocify {
 <li><p>Install the <code>RBiotools</code> package</p>
 <p>We will install <code>RBioTools</code> from zip source. Note: you may need to update the file path depending on where you saved the tar.gz from <a href="#install-r-r-studio-and-other-setup">Install R, R Studio, and other setup</a>; step 5.</p></li>
 </ol>
-<pre class="r"><code>  install.packages(&quot;RBiotools_0.5.0.tar.gz&quot;, repos = NULL, type = &quot;source&quot;)</code></pre>
+<pre class="r"><code>  install.packages(&quot;RBiotools_0.5.2.tar.gz&quot;, repos = NULL, type = &quot;source&quot;)</code></pre>
 <ol start="7" style="list-style-type: decimal">
 <li>Load the <code>RBiotools</code> library</li>
 </ol>
@@ -498,6 +502,7 @@ div.tocify {
 <p>Once you have a sample set of organisms in a list, use <code>downloadGenBank()</code> to create a data frame with the details of the organisms.</p>
 <pre class="r"><code>downloadGenBank(eColi)</code></pre>
 <pre><code>## Initializing RBiotools
+## Initializing dependencies ...
 ## Downloading genome data for organism with accession ID: AP012306 
 ## Downloading genome data for organism with accession ID: KK583188 
 ## Downloading genome data for organism with accession ID: U00096 
@@ -637,7 +642,7 @@ div.tocify {
 ## Calling protein genes for accession ID: CP026877 
 ## Calling protein genes for accession ID: CP026793 
 ## Calling protein genes for accession ID: CP015831 
-## Number of ungapped alignments: 112023
+## Number of ungapped alignments: 112022
 ## Number of Smith-Waterman alignments: 2514</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>Use the homology matrix to plot the Blast Matrix</li>
