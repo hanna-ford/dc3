@@ -278,7 +278,7 @@ If you want to create a genome atlas for an organism already in a list, such as 
 Note: This graphic generated at this step will be a stored as an SVG file in your Working Directory. SVG files can be accessed by:
 
 -   Use your File Explorer (or equivalent) to navigate to your Working Directory
--   Righ-click on the file
+-   Right-click on the file
 -   Hover over "Open with"
 -   Select a browser (Firefox, Google Chrome, etc...) to open the file.
 
