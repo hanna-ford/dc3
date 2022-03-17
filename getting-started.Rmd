@@ -48,12 +48,12 @@ To get started there are several installations that must be completed. These ite
 
     -   *Suggestion:* Create a directory called BMIG5101 where you can store all of your class materials for the semester.
 
-5.  Download the RBioTools tar.gz from here: <https://github.com/hanna-ford/dc3/blob/main/docs/RBiotools_0.5.0.tar.gz>
+5.  Download the RBioTools tar.gz from here: <https://github.com/hanna-ford/dc3/blob/d5a4a7a22756779fadce123155b990183995e5b2/docs/RBiotools_0.5.2.tar.gz>
 
     -   Save this tar.gz file in the root of your Working Directory
 
 6.  Download the `getting-started.R` script from here:
-<https://raw.githubusercontent.com/hanna-ford/dc3/main/docs/getting-started.R>
+<https://github.com/hanna-ford/dc3/blob/d5a4a7a22756779fadce123155b990183995e5b2/getting-started.R>
     
     -   When you click on the above link the code will open in browser window; right click in that window and select, "Save as..." (or "Save page as ..."); make sure that the save as type is set to "Text Document"
     -   Save this R script in the root of your Working Directory
