@@ -57,7 +57,7 @@
     
 # -----2.6 Install the RBiotools package -----
   
-  install.packages("RBiotools_0.5.0.tar.gz", repos = NULL, type = "source")
+  install.packages("RBiotools_0.5.3.tar.gz", repos = NULL, type = "source")
   
   
   

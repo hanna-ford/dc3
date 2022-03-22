@@ -151,7 +151,7 @@ ifelse(!dir.exists("./r_repository/"), dir.create("./r_repository/"), "Folder ex
 
 ```{r install.packages, eval=FALSE, echo=TRUE, error=FALSE, warning=FALSE, message=FALSE}
   
-  install.packages("RBiotools_0.5.2.tar.gz", repos = NULL, type = "source")
+  install.packages("RBiotools_0.5.3.tar.gz", repos = NULL, type = "source")
 
 ```
 
@@ -227,8 +227,6 @@ The results will be stored in two separate data frames: orgData.df and orgName.d
 Click on the data frame in the Environment pane to view the contents or type `View(orgData.df)` directly into the Console.
 
 Follow the same steps to view the contents of the `orgName.df` data frame
-
-![](./r_repository/orgdata-details.png)
 
 If you have multiple lists, note that the results are not overwritten if you run this again but are appended to the same data frame.
 
