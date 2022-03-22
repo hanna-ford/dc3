@@ -48,7 +48,7 @@ To get started there are several installations that must be completed. These ite
 
     -   *Suggestion:* Create a directory called BMIG5101 where you can store all of your class materials for the semester.
 
-5.  Download the RBioTools tar.gz from here: <https://github.com/hanna-ford/dc3/blob/d5a4a7a22756779fadce123155b990183995e5b2/docs/RBiotools_0.5.3.tar.gz>
+5.  Download the RBioTools tar.gz from here: <https://github.com/hanna-ford/dc3/blob/02c481ba7af3f9aae3b326df43230ec57c21a045/docs/RBiotools_0.5.3.tar.gz>
 
     -   Save this tar.gz file in the root of your Working Directory
 
