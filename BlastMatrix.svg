@@ -1,6 +1,6 @@
 <svg version="1.1"
    baseProfile="full"
-   width="1800" height="1200"
+   width="2100" height="1350"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink">
    <defs>
@@ -9,349 +9,499 @@
            stroke="black" stroke-width="2"
            transform = "rotate(-45 0 0)"/>
    </defs>
-   <use xlink:href="#element" x="200" y="900" fill="#ffffff" />
-   <text x="250" y="895" class="strong" text-anchor="middle" font-size="135%">0%</text>
-   <text x="250" y="910" class="strong" text-anchor="middle" font-size="85%">7 / 3607</text>
-   <use xlink:href="#element" x="300" y="900" fill="#ffecec" />
-   <text x="350" y="895" class="strong" text-anchor="middle" font-size="135%">1%</text>
-   <text x="350" y="910" class="strong" text-anchor="middle" font-size="85%">41 / 4536</text>
-   <use xlink:href="#element" x="400" y="900" fill="#fff5f5" />
-   <text x="450" y="895" class="strong" text-anchor="middle" font-size="135%">1%</text>
-   <text x="450" y="910" class="strong" text-anchor="middle" font-size="85%">25 / 4248</text>
-   <use xlink:href="#element" x="500" y="900" fill="#fff8f8" />
-   <text x="550" y="895" class="strong" text-anchor="middle" font-size="135%">0%</text>
-   <text x="550" y="910" class="strong" text-anchor="middle" font-size="85%">20 / 4222</text>
-   <use xlink:href="#element" x="600" y="900" fill="#ffe2e2" />
-   <text x="650" y="895" class="strong" text-anchor="middle" font-size="135%">1%</text>
-   <text x="650" y="910" class="strong" text-anchor="middle" font-size="85%">60 / 4576</text>
-   <use xlink:href="#element" x="700" y="900" fill="#fff4f4" />
-   <text x="750" y="895" class="strong" text-anchor="middle" font-size="135%">1%</text>
-   <text x="750" y="910" class="strong" text-anchor="middle" font-size="85%">26 / 4262</text>
-   <use xlink:href="#element" x="800" y="900" fill="#ffe0e0" />
-   <text x="850" y="895" class="strong" text-anchor="middle" font-size="135%">1%</text>
-   <text x="850" y="910" class="strong" text-anchor="middle" font-size="85%">64 / 4630</text>
-   <use xlink:href="#element" x="900" y="900" fill="#ffdede" />
-   <text x="950" y="895" class="strong" text-anchor="middle" font-size="135%">1%</text>
-   <text x="950" y="910" class="strong" text-anchor="middle" font-size="85%">68 / 4728</text>
-   <use xlink:href="#element" x="1000" y="900" fill="#ff9191" />
-   <text x="1050" y="895" class="strong" text-anchor="middle" font-size="135%">4%</text>
-   <text x="1050" y="910" class="strong" text-anchor="middle" font-size="85%">216 / 4944</text>
-   <use xlink:href="#element" x="1100" y="900" fill="#ffdddd" />
-   <text x="1150" y="895" class="strong" text-anchor="middle" font-size="135%">2%</text>
-   <text x="1150" y="910" class="strong" text-anchor="middle" font-size="85%">69 / 4585</text>
-   <use xlink:href="#element" x="1200" y="900" fill="#ffe1e1" />
-   <text x="1250" y="895" class="strong" text-anchor="middle" font-size="135%">1%</text>
-   <text x="1250" y="910" class="strong" text-anchor="middle" font-size="85%">61 / 4516</text>
-   <use xlink:href="#element" x="1300" y="900" fill="#ffc5c5" />
-   <text x="1350" y="895" class="strong" text-anchor="middle" font-size="135%">2%</text>
-   <text x="1350" y="910" class="strong" text-anchor="middle" font-size="85%">123 / 5103</text>
-   <use xlink:href="#element" x="1400" y="900" fill="#ffd1d1" />
-   <text x="1450" y="895" class="strong" text-anchor="middle" font-size="135%">2%</text>
-   <text x="1450" y="910" class="strong" text-anchor="middle" font-size="85%">85 / 4385</text>
-   <use xlink:href="#element" x="1500" y="900" fill="#ff6666" />
-   <text x="1550" y="895" class="strong" text-anchor="middle" font-size="135%">6%</text>
-   <text x="1550" y="910" class="strong" text-anchor="middle" font-size="85%">305 / 5075</text>
-   <use xlink:href="#element" x="250" y="850" fill="#b7ffb7" />
-   <text x="300" y="845" class="strong" text-anchor="middle" font-size="135%">65%</text>
-   <text x="300" y="860" class="strong" text-anchor="middle" font-size="85%">3219 / 4924</text>
-   <use xlink:href="#element" x="350" y="850" fill="#afffaf" />
-   <text x="400" y="845" class="strong" text-anchor="middle" font-size="135%">68%</text>
-   <text x="400" y="860" class="strong" text-anchor="middle" font-size="85%">3542 / 5242</text>
-   <use xlink:href="#element" x="450" y="850" fill="#8aff8a" />
-   <text x="500" y="845" class="strong" text-anchor="middle" font-size="135%">78%</text>
-   <text x="500" y="860" class="strong" text-anchor="middle" font-size="85%">3720 / 4750</text>
-   <use xlink:href="#element" x="550" y="850" fill="#9bff9b" />
-   <text x="600" y="845" class="strong" text-anchor="middle" font-size="135%">73%</text>
-   <text x="600" y="860" class="strong" text-anchor="middle" font-size="85%">3724 / 5074</text>
-   <use xlink:href="#element" x="650" y="850" fill="#b2ffb2" />
-   <text x="700" y="845" class="strong" text-anchor="middle" font-size="135%">67%</text>
-   <text x="700" y="860" class="strong" text-anchor="middle" font-size="85%">3539 / 5299</text>
-   <use xlink:href="#element" x="750" y="850" fill="#a8ffa8" />
-   <text x="800" y="845" class="strong" text-anchor="middle" font-size="135%">70%</text>
-   <text x="800" y="860" class="strong" text-anchor="middle" font-size="85%">3653 / 5239</text>
-   <use xlink:href="#element" x="850" y="850" fill="#c3ffc3" />
-   <text x="900" y="845" class="strong" text-anchor="middle" font-size="135%">62%</text>
-   <text x="900" y="860" class="strong" text-anchor="middle" font-size="85%">3580 / 5778</text>
-   <use xlink:href="#element" x="950" y="850" fill="#beffbe" />
-   <text x="1000" y="845" class="strong" text-anchor="middle" font-size="135%">64%</text>
-   <text x="1000" y="860" class="strong" text-anchor="middle" font-size="85%">3757 / 5915</text>
-   <use xlink:href="#element" x="1050" y="850" fill="#e6ffe6" />
-   <text x="1100" y="845" class="strong" text-anchor="middle" font-size="135%">52%</text>
-   <text x="1100" y="860" class="strong" text-anchor="middle" font-size="85%">3260 / 6269</text>
-   <use xlink:href="#element" x="1150" y="850" fill="#dcffdc" />
-   <text x="1200" y="845" class="strong" text-anchor="middle" font-size="135%">55%</text>
-   <text x="1200" y="860" class="strong" text-anchor="middle" font-size="85%">3224 / 5877</text>
-   <use xlink:href="#element" x="1250" y="850" fill="#f4fff4" />
-   <text x="1300" y="845" class="strong" text-anchor="middle" font-size="135%">48%</text>
-   <text x="1300" y="860" class="strong" text-anchor="middle" font-size="85%">3120 / 6499</text>
-   <use xlink:href="#element" x="1350" y="850" fill="#fdfffd" />
-   <text x="1400" y="845" class="strong" text-anchor="middle" font-size="135%">45%</text>
-   <text x="1400" y="860" class="strong" text-anchor="middle" font-size="85%">2961 / 6527</text>
-   <use xlink:href="#element" x="1450" y="850" fill="#ebffeb" />
-   <text x="1500" y="845" class="strong" text-anchor="middle" font-size="135%">50%</text>
-   <text x="1500" y="860" class="strong" text-anchor="middle" font-size="85%">3169 / 6291</text>
-   <use xlink:href="#element" x="300" y="800" fill="#73ff73" />
-   <text x="350" y="795" class="strong" text-anchor="middle" font-size="135%">85%</text>
-   <text x="350" y="810" class="strong" text-anchor="middle" font-size="85%">3603 / 4252</text>
-   <use xlink:href="#element" x="400" y="800" fill="#b3ffb3" />
-   <text x="450" y="795" class="strong" text-anchor="middle" font-size="135%">66%</text>
-   <text x="450" y="810" class="strong" text-anchor="middle" font-size="85%">3495 / 5263</text>
-   <use xlink:href="#element" x="500" y="800" fill="#9bff9b" />
-   <text x="550" y="795" class="strong" text-anchor="middle" font-size="135%">74%</text>
-   <text x="550" y="810" class="strong" text-anchor="middle" font-size="85%">3739 / 5085</text>
-   <use xlink:href="#element" x="600" y="800" fill="#abffab" />
-   <text x="650" y="795" class="strong" text-anchor="middle" font-size="135%">69%</text>
-   <text x="650" y="810" class="strong" text-anchor="middle" font-size="85%">3457 / 5027</text>
-   <use xlink:href="#element" x="700" y="800" fill="#c5ffc5" />
-   <text x="750" y="795" class="strong" text-anchor="middle" font-size="135%">61%</text>
-   <text x="750" y="810" class="strong" text-anchor="middle" font-size="85%">3498 / 5708</text>
-   <use xlink:href="#element" x="800" y="800" fill="#b0ffb0" />
-   <text x="850" y="795" class="strong" text-anchor="middle" font-size="135%">67%</text>
-   <text x="850" y="810" class="strong" text-anchor="middle" font-size="85%">3617 / 5373</text>
-   <use xlink:href="#element" x="900" y="800" fill="#cdffcd" />
-   <text x="950" y="795" class="strong" text-anchor="middle" font-size="135%">59%</text>
-   <text x="950" y="810" class="strong" text-anchor="middle" font-size="85%">3560 / 6014</text>
-   <use xlink:href="#element" x="1000" y="800" fill="#ddffdd" />
-   <text x="1050" y="795" class="strong" text-anchor="middle" font-size="135%">54%</text>
-   <text x="1050" y="810" class="strong" text-anchor="middle" font-size="85%">3285 / 6028</text>
-   <use xlink:href="#element" x="1100" y="800" fill="#ddffdd" />
-   <text x="1150" y="795" class="strong" text-anchor="middle" font-size="135%">54%</text>
-   <text x="1150" y="810" class="strong" text-anchor="middle" font-size="85%">3337 / 6123</text>
-   <use xlink:href="#element" x="1200" y="800" fill="#e8ffe8" />
-   <text x="1250" y="795" class="strong" text-anchor="middle" font-size="135%">51%</text>
-   <text x="1250" y="810" class="strong" text-anchor="middle" font-size="85%">3286 / 6402</text>
-   <use xlink:href="#element" x="1300" y="800" fill="#e0ffe0" />
-   <text x="1350" y="795" class="strong" text-anchor="middle" font-size="135%">54%</text>
-   <text x="1350" y="810" class="strong" text-anchor="middle" font-size="85%">3104 / 5797</text>
-   <use xlink:href="#element" x="1400" y="800" fill="#ffffff" />
-   <text x="1450" y="795" class="strong" text-anchor="middle" font-size="135%">45%</text>
-   <text x="1450" y="810" class="strong" text-anchor="middle" font-size="85%">3147 / 7031</text>
-   <use xlink:href="#element" x="350" y="750" fill="#8dff8d" />
-   <text x="400" y="745" class="strong" text-anchor="middle" font-size="135%">77%</text>
-   <text x="400" y="760" class="strong" text-anchor="middle" font-size="85%">3418 / 4411</text>
-   <use xlink:href="#element" x="450" y="750" fill="#baffba" />
-   <text x="500" y="745" class="strong" text-anchor="middle" font-size="135%">65%</text>
-   <text x="500" y="760" class="strong" text-anchor="middle" font-size="85%">3578 / 5534</text>
-   <use xlink:href="#element" x="550" y="750" fill="#a2ffa2" />
-   <text x="600" y="745" class="strong" text-anchor="middle" font-size="135%">71%</text>
-   <text x="600" y="760" class="strong" text-anchor="middle" font-size="85%">3541 / 4969</text>
-   <use xlink:href="#element" x="650" y="750" fill="#beffbe" />
-   <text x="700" y="745" class="strong" text-anchor="middle" font-size="135%">64%</text>
-   <text x="700" y="760" class="strong" text-anchor="middle" font-size="85%">3438 / 5414</text>
-   <use xlink:href="#element" x="750" y="750" fill="#b2ffb2" />
-   <text x="800" y="745" class="strong" text-anchor="middle" font-size="135%">67%</text>
-   <text x="800" y="760" class="strong" text-anchor="middle" font-size="85%">3728 / 5576</text>
-   <use xlink:href="#element" x="850" y="750" fill="#c8ffc8" />
-   <text x="900" y="745" class="strong" text-anchor="middle" font-size="135%">61%</text>
-   <text x="900" y="760" class="strong" text-anchor="middle" font-size="85%">3471 / 5735</text>
-   <use xlink:href="#element" x="950" y="750" fill="#e6ffe6" />
-   <text x="1000" y="745" class="strong" text-anchor="middle" font-size="135%">52%</text>
-   <text x="1000" y="760" class="strong" text-anchor="middle" font-size="85%">3153 / 6062</text>
-   <use xlink:href="#element" x="1050" y="750" fill="#d2ffd2" />
-   <text x="1100" y="745" class="strong" text-anchor="middle" font-size="135%">58%</text>
-   <text x="1100" y="760" class="strong" text-anchor="middle" font-size="85%">3382 / 5862</text>
-   <use xlink:href="#element" x="1150" y="750" fill="#fcfffc" />
-   <text x="1200" y="745" class="strong" text-anchor="middle" font-size="135%">46%</text>
-   <text x="1200" y="760" class="strong" text-anchor="middle" font-size="85%">3145 / 6902</text>
-   <use xlink:href="#element" x="1250" y="750" fill="#e6ffe6" />
-   <text x="1300" y="745" class="strong" text-anchor="middle" font-size="135%">52%</text>
-   <text x="1300" y="760" class="strong" text-anchor="middle" font-size="85%">3065 / 5905</text>
-   <use xlink:href="#element" x="1350" y="750" fill="#deffde" />
-   <text x="1400" y="745" class="strong" text-anchor="middle" font-size="135%">54%</text>
-   <text x="1400" y="760" class="strong" text-anchor="middle" font-size="85%">3367 / 6224</text>
-   <use xlink:href="#element" x="400" y="700" fill="#a4ffa4" />
-   <text x="450" y="695" class="strong" text-anchor="middle" font-size="135%">71%</text>
-   <text x="450" y="710" class="strong" text-anchor="middle" font-size="85%">3394 / 4789</text>
-   <use xlink:href="#element" x="500" y="700" fill="#8eff8e" />
-   <text x="550" y="695" class="strong" text-anchor="middle" font-size="135%">77%</text>
-   <text x="550" y="710" class="strong" text-anchor="middle" font-size="85%">3828 / 4970</text>
-   <use xlink:href="#element" x="600" y="700" fill="#beffbe" />
-   <text x="650" y="695" class="strong" text-anchor="middle" font-size="135%">63%</text>
-   <text x="650" y="710" class="strong" text-anchor="middle" font-size="85%">3447 / 5431</text>
-   <use xlink:href="#element" x="700" y="700" fill="#b3ffb3" />
-   <text x="750" y="695" class="strong" text-anchor="middle" font-size="135%">67%</text>
-   <text x="750" y="710" class="strong" text-anchor="middle" font-size="85%">3576 / 5374</text>
-   <use xlink:href="#element" x="800" y="700" fill="#c2ffc2" />
-   <text x="850" y="695" class="strong" text-anchor="middle" font-size="135%">62%</text>
-   <text x="850" y="710" class="strong" text-anchor="middle" font-size="85%">3651 / 5869</text>
-   <use xlink:href="#element" x="900" y="700" fill="#dbffdb" />
-   <text x="950" y="695" class="strong" text-anchor="middle" font-size="135%">55%</text>
-   <text x="950" y="710" class="strong" text-anchor="middle" font-size="85%">3137 / 5710</text>
-   <use xlink:href="#element" x="1000" y="700" fill="#dcffdc" />
-   <text x="1050" y="695" class="strong" text-anchor="middle" font-size="135%">55%</text>
-   <text x="1050" y="710" class="strong" text-anchor="middle" font-size="85%">3235 / 5911</text>
-   <use xlink:href="#element" x="1100" y="700" fill="#f4fff4" />
-   <text x="1150" y="695" class="strong" text-anchor="middle" font-size="135%">48%</text>
-   <text x="1150" y="710" class="strong" text-anchor="middle" font-size="85%">3183 / 6648</text>
-   <use xlink:href="#element" x="1200" y="700" fill="#e7ffe7" />
-   <text x="1250" y="695" class="strong" text-anchor="middle" font-size="135%">51%</text>
-   <text x="1250" y="710" class="strong" text-anchor="middle" font-size="85%">3171 / 6158</text>
-   <use xlink:href="#element" x="1300" y="700" fill="#e9ffe9" />
-   <text x="1350" y="695" class="strong" text-anchor="middle" font-size="135%">51%</text>
-   <text x="1350" y="710" class="strong" text-anchor="middle" font-size="85%">3267 / 6393</text>
-   <use xlink:href="#element" x="450" y="650" fill="#a5ffa5" />
-   <text x="500" y="645" class="strong" text-anchor="middle" font-size="135%">70%</text>
-   <text x="500" y="660" class="strong" text-anchor="middle" font-size="85%">3253 / 4616</text>
-   <use xlink:href="#element" x="550" y="650" fill="#aeffae" />
-   <text x="600" y="645" class="strong" text-anchor="middle" font-size="135%">68%</text>
-   <text x="600" y="660" class="strong" text-anchor="middle" font-size="85%">3704 / 5462</text>
-   <use xlink:href="#element" x="650" y="650" fill="#a9ffa9" />
-   <text x="700" y="645" class="strong" text-anchor="middle" font-size="135%">69%</text>
-   <text x="700" y="660" class="strong" text-anchor="middle" font-size="85%">3679 / 5297</text>
-   <use xlink:href="#element" x="750" y="650" fill="#c3ffc3" />
-   <text x="800" y="645" class="strong" text-anchor="middle" font-size="135%">62%</text>
-   <text x="800" y="660" class="strong" text-anchor="middle" font-size="85%">3505 / 5661</text>
-   <use xlink:href="#element" x="850" y="650" fill="#d5ffd5" />
-   <text x="900" y="645" class="strong" text-anchor="middle" font-size="135%">57%</text>
-   <text x="900" y="660" class="strong" text-anchor="middle" font-size="85%">3317 / 5844</text>
-   <use xlink:href="#element" x="950" y="650" fill="#d2ffd2" />
-   <text x="1000" y="645" class="strong" text-anchor="middle" font-size="135%">58%</text>
-   <text x="1000" y="660" class="strong" text-anchor="middle" font-size="85%">3210 / 5568</text>
-   <use xlink:href="#element" x="1050" y="650" fill="#fcfffc" />
-   <text x="1100" y="645" class="strong" text-anchor="middle" font-size="135%">46%</text>
-   <text x="1100" y="660" class="strong" text-anchor="middle" font-size="85%">3049 / 6684</text>
-   <use xlink:href="#element" x="1150" y="650" fill="#dbffdb" />
-   <text x="1200" y="645" class="strong" text-anchor="middle" font-size="135%">55%</text>
-   <text x="1200" y="660" class="strong" text-anchor="middle" font-size="85%">3234 / 5879</text>
-   <use xlink:href="#element" x="1250" y="650" fill="#66ff66" />
-   <text x="1300" y="645" class="strong" text-anchor="middle" font-size="135%">89%</text>
-   <text x="1300" y="660" class="strong" text-anchor="middle" font-size="85%">4706 / 5313</text>
-   <use xlink:href="#element" x="500" y="600" fill="#beffbe" />
-   <text x="550" y="595" class="strong" text-anchor="middle" font-size="135%">63%</text>
-   <text x="550" y="610" class="strong" text-anchor="middle" font-size="85%">3197 / 5040</text>
-   <use xlink:href="#element" x="600" y="600" fill="#b0ffb0" />
-   <text x="650" y="595" class="strong" text-anchor="middle" font-size="135%">67%</text>
-   <text x="650" y="610" class="strong" text-anchor="middle" font-size="85%">3726 / 5538</text>
-   <use xlink:href="#element" x="700" y="600" fill="#bcffbc" />
-   <text x="750" y="595" class="strong" text-anchor="middle" font-size="135%">64%</text>
-   <text x="750" y="610" class="strong" text-anchor="middle" font-size="85%">3588 / 5604</text>
-   <use xlink:href="#element" x="800" y="600" fill="#cfffcf" />
-   <text x="850" y="595" class="strong" text-anchor="middle" font-size="135%">59%</text>
-   <text x="850" y="610" class="strong" text-anchor="middle" font-size="85%">3255 / 5552</text>
-   <use xlink:href="#element" x="900" y="600" fill="#c6ffc6" />
-   <text x="950" y="595" class="strong" text-anchor="middle" font-size="135%">61%</text>
-   <text x="950" y="610" class="strong" text-anchor="middle" font-size="85%">3452 / 5640</text>
-   <use xlink:href="#element" x="1000" y="600" fill="#f4fff4" />
-   <text x="1050" y="595" class="strong" text-anchor="middle" font-size="135%">48%</text>
-   <text x="1050" y="610" class="strong" text-anchor="middle" font-size="85%">3033 / 6332</text>
-   <use xlink:href="#element" x="1100" y="600" fill="#e5ffe5" />
-   <text x="1150" y="595" class="strong" text-anchor="middle" font-size="135%">52%</text>
-   <text x="1150" y="610" class="strong" text-anchor="middle" font-size="85%">3090 / 5925</text>
-   <use xlink:href="#element" x="1200" y="600" fill="#c1ffc1" />
-   <text x="1250" y="595" class="strong" text-anchor="middle" font-size="135%">62%</text>
-   <text x="1250" y="610" class="strong" text-anchor="middle" font-size="85%">3767 / 6036</text>
-   <use xlink:href="#element" x="550" y="550" fill="#b3ffb3" />
-   <text x="600" y="545" class="strong" text-anchor="middle" font-size="135%">67%</text>
-   <text x="600" y="560" class="strong" text-anchor="middle" font-size="85%">3334 / 5001</text>
-   <use xlink:href="#element" x="650" y="550" fill="#cfffcf" />
-   <text x="700" y="545" class="strong" text-anchor="middle" font-size="135%">59%</text>
-   <text x="700" y="560" class="strong" text-anchor="middle" font-size="85%">3504 / 5976</text>
-   <use xlink:href="#element" x="750" y="550" fill="#cdffcd" />
-   <text x="800" y="545" class="strong" text-anchor="middle" font-size="135%">59%</text>
-   <text x="800" y="560" class="strong" text-anchor="middle" font-size="85%">3281 / 5552</text>
-   <use xlink:href="#element" x="850" y="550" fill="#c3ffc3" />
-   <text x="900" y="545" class="strong" text-anchor="middle" font-size="135%">62%</text>
-   <text x="900" y="560" class="strong" text-anchor="middle" font-size="85%">3339 / 5399</text>
-   <use xlink:href="#element" x="950" y="550" fill="#edffed" />
-   <text x="1000" y="545" class="strong" text-anchor="middle" font-size="135%">50%</text>
-   <text x="1000" y="560" class="strong" text-anchor="middle" font-size="85%">3219 / 6460</text>
-   <use xlink:href="#element" x="1050" y="550" fill="#daffda" />
-   <text x="1100" y="545" class="strong" text-anchor="middle" font-size="135%">55%</text>
-   <text x="1100" y="560" class="strong" text-anchor="middle" font-size="85%">3081 / 5566</text>
-   <use xlink:href="#element" x="1150" y="550" fill="#d1ffd1" />
-   <text x="1200" y="545" class="strong" text-anchor="middle" font-size="135%">58%</text>
-   <text x="1200" y="560" class="strong" text-anchor="middle" font-size="85%">3557 / 6148</text>
-   <use xlink:href="#element" x="600" y="500" fill="#bfffbf" />
-   <text x="650" y="495" class="strong" text-anchor="middle" font-size="135%">63%</text>
-   <text x="650" y="510" class="strong" text-anchor="middle" font-size="85%">3309 / 5242</text>
-   <use xlink:href="#element" x="700" y="500" fill="#dfffdf" />
-   <text x="750" y="495" class="strong" text-anchor="middle" font-size="135%">54%</text>
-   <text x="750" y="510" class="strong" text-anchor="middle" font-size="85%">3193 / 5928</text>
-   <use xlink:href="#element" x="800" y="500" fill="#c3ffc3" />
-   <text x="850" y="495" class="strong" text-anchor="middle" font-size="135%">62%</text>
-   <text x="850" y="510" class="strong" text-anchor="middle" font-size="85%">3350 / 5414</text>
-   <use xlink:href="#element" x="900" y="500" fill="#e9ffe9" />
-   <text x="950" y="495" class="strong" text-anchor="middle" font-size="135%">51%</text>
-   <text x="950" y="510" class="strong" text-anchor="middle" font-size="85%">3147 / 6178</text>
-   <use xlink:href="#element" x="1000" y="500" fill="#d6ffd6" />
-   <text x="1050" y="495" class="strong" text-anchor="middle" font-size="135%">57%</text>
-   <text x="1050" y="510" class="strong" text-anchor="middle" font-size="85%">3239 / 5722</text>
-   <use xlink:href="#element" x="1100" y="500" fill="#ccffcc" />
-   <text x="1150" y="495" class="strong" text-anchor="middle" font-size="135%">59%</text>
-   <text x="1150" y="510" class="strong" text-anchor="middle" font-size="85%">3481 / 5856</text>
-   <use xlink:href="#element" x="650" y="450" fill="#cbffcb" />
-   <text x="700" y="445" class="strong" text-anchor="middle" font-size="135%">60%</text>
-   <text x="700" y="460" class="strong" text-anchor="middle" font-size="85%">3060 / 5132</text>
-   <use xlink:href="#element" x="750" y="450" fill="#d5ffd5" />
-   <text x="800" y="445" class="strong" text-anchor="middle" font-size="135%">57%</text>
-   <text x="800" y="460" class="strong" text-anchor="middle" font-size="85%">3276 / 5776</text>
-   <use xlink:href="#element" x="850" y="450" fill="#e8ffe8" />
-   <text x="900" y="445" class="strong" text-anchor="middle" font-size="135%">51%</text>
-   <text x="900" y="460" class="strong" text-anchor="middle" font-size="85%">3168 / 6183</text>
-   <use xlink:href="#element" x="950" y="450" fill="#d3ffd3" />
-   <text x="1000" y="445" class="strong" text-anchor="middle" font-size="135%">57%</text>
-   <text x="1000" y="460" class="strong" text-anchor="middle" font-size="85%">3137 / 5470</text>
-   <use xlink:href="#element" x="1050" y="450" fill="#c3ffc3" />
-   <text x="1100" y="445" class="strong" text-anchor="middle" font-size="135%">62%</text>
-   <text x="1100" y="460" class="strong" text-anchor="middle" font-size="85%">3687 / 5964</text>
-   <use xlink:href="#element" x="700" y="400" fill="#c0ffc0" />
-   <text x="750" y="395" class="strong" text-anchor="middle" font-size="135%">63%</text>
-   <text x="750" y="410" class="strong" text-anchor="middle" font-size="85%">3132 / 4991</text>
-   <use xlink:href="#element" x="800" y="400" fill="#f7fff7" />
-   <text x="850" y="395" class="strong" text-anchor="middle" font-size="135%">47%</text>
-   <text x="850" y="410" class="strong" text-anchor="middle" font-size="85%">3078 / 6561</text>
-   <use xlink:href="#element" x="900" y="400" fill="#cfffcf" />
-   <text x="950" y="395" class="strong" text-anchor="middle" font-size="135%">59%</text>
-   <text x="950" y="410" class="strong" text-anchor="middle" font-size="85%">3188 / 5445</text>
-   <use xlink:href="#element" x="1000" y="400" fill="#c7ffc7" />
-   <text x="1050" y="395" class="strong" text-anchor="middle" font-size="135%">61%</text>
-   <text x="1050" y="410" class="strong" text-anchor="middle" font-size="85%">3513 / 5784</text>
-   <use xlink:href="#element" x="750" y="350" fill="#ecffec" />
-   <text x="800" y="345" class="strong" text-anchor="middle" font-size="135%">50%</text>
-   <text x="800" y="360" class="strong" text-anchor="middle" font-size="85%">2915 / 5795</text>
-   <use xlink:href="#element" x="850" y="350" fill="#e0ffe0" />
-   <text x="900" y="345" class="strong" text-anchor="middle" font-size="135%">54%</text>
-   <text x="900" y="360" class="strong" text-anchor="middle" font-size="85%">3111 / 5810</text>
-   <use xlink:href="#element" x="950" y="350" fill="#c2ffc2" />
-   <text x="1000" y="345" class="strong" text-anchor="middle" font-size="135%">62%</text>
-   <text x="1000" y="360" class="strong" text-anchor="middle" font-size="85%">3579 / 5744</text>
-   <use xlink:href="#element" x="800" y="300" fill="#ceffce" />
-   <text x="850" y="295" class="strong" text-anchor="middle" font-size="135%">59%</text>
-   <text x="850" y="310" class="strong" text-anchor="middle" font-size="85%">2963 / 5029</text>
-   <use xlink:href="#element" x="900" y="300" fill="#ceffce" />
-   <text x="950" y="295" class="strong" text-anchor="middle" font-size="135%">59%</text>
-   <text x="950" y="310" class="strong" text-anchor="middle" font-size="85%">3554 / 6057</text>
-   <use xlink:href="#element" x="850" y="250" fill="#c4ffc4" />
-   <text x="900" y="245" class="strong" text-anchor="middle" font-size="135%">62%</text>
-   <text x="900" y="260" class="strong" text-anchor="middle" font-size="85%">3309 / 5373</text>
-   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(213,872), rotate(45)">K-12 substr. MDS42</text>
-   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(263,822), rotate(45)">DSM 30083</text>
-   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(313,772), rotate(45)">K-12 substr. MG1655</text>
-   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(363,722), rotate(45)">HS</text>
-   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(413,672), rotate(45)">E24377A</text>
-   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(463,622), rotate(45)">SE15</text>
-   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(513,572), rotate(45)">E2348/69</text>
-   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(563,522), rotate(45)">UMN026</text>
-   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(613,472), rotate(45)">EDL933</text>
-   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(663,422), rotate(45)">E670/74</text>
-   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(713,372), rotate(45)">ATCC 29930</text>
-   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(763,322), rotate(45)">ATCC 35964</text>
-   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(813,272), rotate(45)">74-1170</text>
-   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(863,222), rotate(45)">644-PT8</text>
-   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(933,223), rotate(-45)">K-12 substr. MDS42</text>
-   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(983,273), rotate(-45)">DSM 30083</text>
-   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1033,323), rotate(-45)">K-12 substr. MG1655</text>
-   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1083,373), rotate(-45)">HS</text>
-   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1133,423), rotate(-45)">E24377A</text>
-   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1183,473), rotate(-45)">SE15</text>
-   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1233,523), rotate(-45)">E2348/69</text>
-   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1283,573), rotate(-45)">UMN026</text>
-   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1333,623), rotate(-45)">EDL933</text>
-   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1383,673), rotate(-45)">E670/74</text>
-   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1433,723), rotate(-45)">ATCC 29930</text>
-   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1483,773), rotate(-45)">ATCC 35964</text>
-   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1533,823), rotate(-45)">74-1170</text>
-   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1583,873), rotate(-45)">644-PT8</text>
+   <use xlink:href="#element" x="200" y="1050" fill="#fff5f5" />
+   <text x="250" y="1045" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="250" y="1060" class="strong" text-anchor="middle" font-size="85%">7 / 2363</text>
+   <use xlink:href="#element" x="300" y="1050" fill="#ffc4c4" />
+   <text x="350" y="1045" class="strong" text-anchor="middle" font-size="135%">1%</text>
+   <text x="350" y="1060" class="strong" text-anchor="middle" font-size="85%">25 / 2260</text>
+   <use xlink:href="#element" x="400" y="1050" fill="#ffc4c4" />
+   <text x="450" y="1045" class="strong" text-anchor="middle" font-size="135%">1%</text>
+   <text x="450" y="1060" class="strong" text-anchor="middle" font-size="85%">23 / 2072</text>
+   <use xlink:href="#element" x="500" y="1050" fill="#ffe0e0" />
+   <text x="550" y="1045" class="strong" text-anchor="middle" font-size="135%">1%</text>
+   <text x="550" y="1060" class="strong" text-anchor="middle" font-size="85%">13 / 2044</text>
+   <use xlink:href="#element" x="600" y="1050" fill="#ffdfdf" />
+   <text x="650" y="1045" class="strong" text-anchor="middle" font-size="135%">1%</text>
+   <text x="650" y="1060" class="strong" text-anchor="middle" font-size="85%">14 / 2125</text>
+   <use xlink:href="#element" x="700" y="1050" fill="#ffd6d6" />
+   <text x="750" y="1045" class="strong" text-anchor="middle" font-size="135%">1%</text>
+   <text x="750" y="1060" class="strong" text-anchor="middle" font-size="85%">16 / 1994</text>
+   <use xlink:href="#element" x="800" y="1050" fill="#ff7a7a" />
+   <text x="850" y="1045" class="strong" text-anchor="middle" font-size="135%">2%</text>
+   <text x="850" y="1060" class="strong" text-anchor="middle" font-size="85%">52 / 2228</text>
+   <use xlink:href="#element" x="900" y="1050" fill="#ff8484" />
+   <text x="950" y="1045" class="strong" text-anchor="middle" font-size="135%">2%</text>
+   <text x="950" y="1060" class="strong" text-anchor="middle" font-size="85%">44 / 2027</text>
+   <use xlink:href="#element" x="1000" y="1050" fill="#fffefe" />
+   <text x="1050" y="1045" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1050" y="1060" class="strong" text-anchor="middle" font-size="85%">4 / 2670</text>
+   <use xlink:href="#element" x="1100" y="1050" fill="#ffebeb" />
+   <text x="1150" y="1045" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1150" y="1060" class="strong" text-anchor="middle" font-size="85%">9 / 1975</text>
+   <use xlink:href="#element" x="1200" y="1050" fill="#ffecec" />
+   <text x="1250" y="1045" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1250" y="1060" class="strong" text-anchor="middle" font-size="85%">8 / 1813</text>
+   <use xlink:href="#element" x="1300" y="1050" fill="#ffc2c2" />
+   <text x="1350" y="1045" class="strong" text-anchor="middle" font-size="135%">1%</text>
+   <text x="1350" y="1060" class="strong" text-anchor="middle" font-size="85%">32 / 2813</text>
+   <use xlink:href="#element" x="1400" y="1050" fill="#ff6666" />
+   <text x="1450" y="1045" class="strong" text-anchor="middle" font-size="135%">3%</text>
+   <text x="1450" y="1060" class="strong" text-anchor="middle" font-size="85%">58 / 2179</text>
+   <use xlink:href="#element" x="1500" y="1050" fill="#ffdbdb" />
+   <text x="1550" y="1045" class="strong" text-anchor="middle" font-size="135%">1%</text>
+   <text x="1550" y="1060" class="strong" text-anchor="middle" font-size="85%">20 / 2766</text>
+   <use xlink:href="#element" x="1600" y="1050" fill="#ffffff" />
+   <text x="1650" y="1045" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1650" y="1060" class="strong" text-anchor="middle" font-size="85%">3 / 2303</text>
+   <use xlink:href="#element" x="1700" y="1050" fill="#ffc0c0" />
+   <text x="1750" y="1045" class="strong" text-anchor="middle" font-size="135%">1%</text>
+   <text x="1750" y="1060" class="strong" text-anchor="middle" font-size="85%">24 / 2049</text>
+   <use xlink:href="#element" x="1800" y="1050" fill="#fff0f0" />
+   <text x="1850" y="1045" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1850" y="1060" class="strong" text-anchor="middle" font-size="85%">7 / 1890</text>
+   <use xlink:href="#element" x="250" y="1000" fill="#6eff6e" />
+   <text x="300" y="995" class="strong" text-anchor="middle" font-size="135%">77%</text>
+   <text x="300" y="1010" class="strong" text-anchor="middle" font-size="85%">2015 / 2608</text>
+   <use xlink:href="#element" x="350" y="1000" fill="#ffffff" />
+   <text x="400" y="995" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="400" y="1010" class="strong" text-anchor="middle" font-size="85%">0 / 4332</text>
+   <use xlink:href="#element" x="450" y="1000" fill="#66ff66" />
+   <text x="500" y="995" class="strong" text-anchor="middle" font-size="135%">82%</text>
+   <text x="500" y="1010" class="strong" text-anchor="middle" font-size="85%">1849 / 2267</text>
+   <use xlink:href="#element" x="550" y="1000" fill="#96ff96" />
+   <text x="600" y="995" class="strong" text-anchor="middle" font-size="135%">56%</text>
+   <text x="600" y="1010" class="strong" text-anchor="middle" font-size="85%">1493 / 2676</text>
+   <use xlink:href="#element" x="650" y="1000" fill="#ceffce" />
+   <text x="700" y="995" class="strong" text-anchor="middle" font-size="135%">26%</text>
+   <text x="700" y="1010" class="strong" text-anchor="middle" font-size="85%">851 / 3268</text>
+   <use xlink:href="#element" x="750" y="1000" fill="#ffffff" />
+   <text x="800" y="995" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="800" y="1010" class="strong" text-anchor="middle" font-size="85%">0 / 4222</text>
+   <use xlink:href="#element" x="850" y="1000" fill="#94ff94" />
+   <text x="900" y="995" class="strong" text-anchor="middle" font-size="135%">57%</text>
+   <text x="900" y="1010" class="strong" text-anchor="middle" font-size="85%">1541 / 2714</text>
+   <use xlink:href="#element" x="950" y="1000" fill="#ffffff" />
+   <text x="1000" y="995" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1000" y="1010" class="strong" text-anchor="middle" font-size="85%">3 / 4694</text>
+   <use xlink:href="#element" x="1050" y="1000" fill="#ffffff" />
+   <text x="1100" y="995" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1100" y="1010" class="strong" text-anchor="middle" font-size="85%">0 / 4645</text>
+   <use xlink:href="#element" x="1150" y="1000" fill="#81ff81" />
+   <text x="1200" y="995" class="strong" text-anchor="middle" font-size="135%">67%</text>
+   <text x="1200" y="1010" class="strong" text-anchor="middle" font-size="85%">1524 / 2264</text>
+   <use xlink:href="#element" x="1250" y="1000" fill="#ffffff" />
+   <text x="1300" y="995" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1300" y="1010" class="strong" text-anchor="middle" font-size="85%">0 / 4626</text>
+   <use xlink:href="#element" x="1350" y="1000" fill="#ffffff" />
+   <text x="1400" y="995" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1400" y="1010" class="strong" text-anchor="middle" font-size="85%">6 / 4986</text>
+   <use xlink:href="#element" x="1450" y="1000" fill="#ffffff" />
+   <text x="1500" y="995" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1500" y="1010" class="strong" text-anchor="middle" font-size="85%">3 / 4942</text>
+   <use xlink:href="#element" x="1550" y="1000" fill="#ffffff" />
+   <text x="1600" y="995" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1600" y="1010" class="strong" text-anchor="middle" font-size="85%">0 / 5069</text>
+   <use xlink:href="#element" x="1650" y="1000" fill="#ffffff" />
+   <text x="1700" y="995" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1700" y="1010" class="strong" text-anchor="middle" font-size="85%">0 / 4352</text>
+   <use xlink:href="#element" x="1750" y="1000" fill="#d1ffd1" />
+   <text x="1800" y="995" class="strong" text-anchor="middle" font-size="135%">25%</text>
+   <text x="1800" y="1010" class="strong" text-anchor="middle" font-size="85%">780 / 3159</text>
+   <use xlink:href="#element" x="300" y="950" fill="#ffffff" />
+   <text x="350" y="945" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="350" y="960" class="strong" text-anchor="middle" font-size="85%">0 / 4435</text>
+   <use xlink:href="#element" x="400" y="950" fill="#ffffff" />
+   <text x="450" y="945" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="450" y="960" class="strong" text-anchor="middle" font-size="85%">0 / 4304</text>
+   <use xlink:href="#element" x="500" y="950" fill="#99ff99" />
+   <text x="550" y="945" class="strong" text-anchor="middle" font-size="135%">55%</text>
+   <text x="550" y="960" class="strong" text-anchor="middle" font-size="85%">1481 / 2716</text>
+   <use xlink:href="#element" x="600" y="950" fill="#cdffcd" />
+   <text x="650" y="945" class="strong" text-anchor="middle" font-size="135%">27%</text>
+   <text x="650" y="960" class="strong" text-anchor="middle" font-size="85%">852 / 3186</text>
+   <use xlink:href="#element" x="700" y="950" fill="#ffffff" />
+   <text x="750" y="945" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="750" y="960" class="strong" text-anchor="middle" font-size="85%">0 / 4353</text>
+   <use xlink:href="#element" x="800" y="950" fill="#ffffff" />
+   <text x="850" y="945" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="850" y="960" class="strong" text-anchor="middle" font-size="85%">0 / 4021</text>
+   <use xlink:href="#element" x="900" y="950" fill="#ffffff" />
+   <text x="950" y="945" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="950" y="960" class="strong" text-anchor="middle" font-size="85%">3 / 4895</text>
+   <use xlink:href="#element" x="1000" y="950" fill="#ffffff" />
+   <text x="1050" y="945" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1050" y="960" class="strong" text-anchor="middle" font-size="85%">0 / 4002</text>
+   <use xlink:href="#element" x="1100" y="950" fill="#ffffff" />
+   <text x="1150" y="945" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1150" y="960" class="strong" text-anchor="middle" font-size="85%">0 / 4483</text>
+   <use xlink:href="#element" x="1200" y="950" fill="#ffffff" />
+   <text x="1250" y="945" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1250" y="960" class="strong" text-anchor="middle" font-size="85%">0 / 4788</text>
+   <use xlink:href="#element" x="1300" y="950" fill="#ffffff" />
+   <text x="1350" y="945" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1350" y="960" class="strong" text-anchor="middle" font-size="85%">0 / 3992</text>
+   <use xlink:href="#element" x="1400" y="950" fill="#75ff75" />
+   <text x="1450" y="945" class="strong" text-anchor="middle" font-size="135%">73%</text>
+   <text x="1450" y="960" class="strong" text-anchor="middle" font-size="85%">2360 / 3219</text>
+   <use xlink:href="#element" x="1500" y="950" fill="#ffffff" />
+   <text x="1550" y="945" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1550" y="960" class="strong" text-anchor="middle" font-size="85%">0 / 4482</text>
+   <use xlink:href="#element" x="1600" y="950" fill="#ffffff" />
+   <text x="1650" y="945" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1650" y="960" class="strong" text-anchor="middle" font-size="85%">0 / 4815</text>
+   <use xlink:href="#element" x="1700" y="950" fill="#ffffff" />
+   <text x="1750" y="945" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1750" y="960" class="strong" text-anchor="middle" font-size="85%">0 / 4193</text>
+   <use xlink:href="#element" x="350" y="900" fill="#ffffff" />
+   <text x="400" y="895" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="400" y="910" class="strong" text-anchor="middle" font-size="85%">0 / 4407</text>
+   <use xlink:href="#element" x="450" y="900" fill="#ffffff" />
+   <text x="500" y="895" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="500" y="910" class="strong" text-anchor="middle" font-size="85%">0 / 4385</text>
+   <use xlink:href="#element" x="550" y="900" fill="#ccffcc" />
+   <text x="600" y="895" class="strong" text-anchor="middle" font-size="135%">27%</text>
+   <text x="600" y="910" class="strong" text-anchor="middle" font-size="85%">864 / 3202</text>
+   <use xlink:href="#element" x="650" y="900" fill="#ffffff" />
+   <text x="700" y="895" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="700" y="910" class="strong" text-anchor="middle" font-size="85%">0 / 4272</text>
+   <use xlink:href="#element" x="750" y="900" fill="#ffffff" />
+   <text x="800" y="895" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="800" y="910" class="strong" text-anchor="middle" font-size="85%">0 / 4152</text>
+   <use xlink:href="#element" x="850" y="900" fill="#ffffff" />
+   <text x="900" y="895" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="900" y="910" class="strong" text-anchor="middle" font-size="85%">0 / 4664</text>
+   <use xlink:href="#element" x="950" y="900" fill="#ffffff" />
+   <text x="1000" y="895" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1000" y="910" class="strong" text-anchor="middle" font-size="85%">0 / 4203</text>
+   <use xlink:href="#element" x="1050" y="900" fill="#ffffff" />
+   <text x="1100" y="895" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1100" y="910" class="strong" text-anchor="middle" font-size="85%">0 / 3840</text>
+   <use xlink:href="#element" x="1150" y="900" fill="#7bff7b" />
+   <text x="1200" y="895" class="strong" text-anchor="middle" font-size="135%">70%</text>
+   <text x="1200" y="910" class="strong" text-anchor="middle" font-size="85%">2264 / 3219</text>
+   <use xlink:href="#element" x="1250" y="900" fill="#ffffff" />
+   <text x="1300" y="895" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1300" y="910" class="strong" text-anchor="middle" font-size="85%">0 / 4154</text>
+   <use xlink:href="#element" x="1350" y="900" fill="#ffffff" />
+   <text x="1400" y="895" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1400" y="910" class="strong" text-anchor="middle" font-size="85%">0 / 4579</text>
+   <use xlink:href="#element" x="1450" y="900" fill="#ffffff" />
+   <text x="1500" y="895" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1500" y="910" class="strong" text-anchor="middle" font-size="85%">0 / 5116</text>
+   <use xlink:href="#element" x="1550" y="900" fill="#ffffff" />
+   <text x="1600" y="895" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1600" y="910" class="strong" text-anchor="middle" font-size="85%">0 / 4228</text>
+   <use xlink:href="#element" x="1650" y="900" fill="#ffffff" />
+   <text x="1700" y="895" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1700" y="910" class="strong" text-anchor="middle" font-size="85%">0 / 4656</text>
+   <use xlink:href="#element" x="400" y="850" fill="#ffffff" />
+   <text x="450" y="845" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="450" y="860" class="strong" text-anchor="middle" font-size="85%">0 / 4488</text>
+   <use xlink:href="#element" x="500" y="850" fill="#ffffff" />
+   <text x="550" y="845" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="550" y="860" class="strong" text-anchor="middle" font-size="85%">0 / 4254</text>
+   <use xlink:href="#element" x="600" y="850" fill="#ffffff" />
+   <text x="650" y="845" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="650" y="860" class="strong" text-anchor="middle" font-size="85%">0 / 4300</text>
+   <use xlink:href="#element" x="700" y="850" fill="#ffffff" />
+   <text x="750" y="845" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="750" y="860" class="strong" text-anchor="middle" font-size="85%">0 / 4071</text>
+   <use xlink:href="#element" x="800" y="850" fill="#ffffff" />
+   <text x="850" y="845" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="850" y="860" class="strong" text-anchor="middle" font-size="85%">0 / 4795</text>
+   <use xlink:href="#element" x="900" y="850" fill="#a0ffa0" />
+   <text x="950" y="845" class="strong" text-anchor="middle" font-size="135%">51%</text>
+   <text x="950" y="860" class="strong" text-anchor="middle" font-size="85%">1333 / 2636</text>
+   <use xlink:href="#element" x="1000" y="850" fill="#ffffff" />
+   <text x="1050" y="845" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1050" y="860" class="strong" text-anchor="middle" font-size="85%">0 / 4041</text>
+   <use xlink:href="#element" x="1100" y="850" fill="#ffffff" />
+   <text x="1150" y="845" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1150" y="860" class="strong" text-anchor="middle" font-size="85%">5 / 4835</text>
+   <use xlink:href="#element" x="1200" y="850" fill="#ffffff" />
+   <text x="1250" y="845" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1250" y="860" class="strong" text-anchor="middle" font-size="85%">3 / 4846</text>
+   <use xlink:href="#element" x="1300" y="850" fill="#ffffff" />
+   <text x="1350" y="845" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1350" y="860" class="strong" text-anchor="middle" font-size="85%">0 / 4741</text>
+   <use xlink:href="#element" x="1400" y="850" fill="#ffffff" />
+   <text x="1450" y="845" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1450" y="860" class="strong" text-anchor="middle" font-size="85%">0 / 4116</text>
+   <use xlink:href="#element" x="1500" y="850" fill="#ffffff" />
+   <text x="1550" y="845" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1550" y="860" class="strong" text-anchor="middle" font-size="85%">0 / 4862</text>
+   <use xlink:href="#element" x="1600" y="850" fill="#ffffff" />
+   <text x="1650" y="845" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1650" y="860" class="strong" text-anchor="middle" font-size="85%">0 / 4069</text>
+   <use xlink:href="#element" x="450" y="800" fill="#ffffff" />
+   <text x="500" y="795" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="500" y="810" class="strong" text-anchor="middle" font-size="85%">0 / 4357</text>
+   <use xlink:href="#element" x="550" y="800" fill="#ffffff" />
+   <text x="600" y="795" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="600" y="810" class="strong" text-anchor="middle" font-size="85%">0 / 4488</text>
+   <use xlink:href="#element" x="650" y="800" fill="#ffffff" />
+   <text x="700" y="795" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="700" y="810" class="strong" text-anchor="middle" font-size="85%">0 / 4099</text>
+   <use xlink:href="#element" x="750" y="800" fill="#ffffff" />
+   <text x="800" y="795" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="800" y="810" class="strong" text-anchor="middle" font-size="85%">0 / 4714</text>
+   <use xlink:href="#element" x="850" y="800" fill="#d1ffd1" />
+   <text x="900" y="795" class="strong" text-anchor="middle" font-size="135%">24%</text>
+   <text x="900" y="810" class="strong" text-anchor="middle" font-size="85%">805 / 3295</text>
+   <use xlink:href="#element" x="950" y="800" fill="#9dff9d" />
+   <text x="1000" y="795" class="strong" text-anchor="middle" font-size="135%">52%</text>
+   <text x="1000" y="810" class="strong" text-anchor="middle" font-size="85%">1303 / 2504</text>
+   <use xlink:href="#element" x="1050" y="800" fill="#ffffff" />
+   <text x="1100" y="795" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1100" y="810" class="strong" text-anchor="middle" font-size="85%">4 / 5037</text>
+   <use xlink:href="#element" x="1150" y="800" fill="#a7ffa7" />
+   <text x="1200" y="795" class="strong" text-anchor="middle" font-size="135%">47%</text>
+   <text x="1200" y="810" class="strong" text-anchor="middle" font-size="85%">1340 / 2866</text>
+   <use xlink:href="#element" x="1250" y="800" fill="#7dff7d" />
+   <text x="1300" y="795" class="strong" text-anchor="middle" font-size="135%">69%</text>
+   <text x="1300" y="810" class="strong" text-anchor="middle" font-size="85%">2228 / 3208</text>
+   <use xlink:href="#element" x="1350" y="800" fill="#ffffff" />
+   <text x="1400" y="795" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1400" y="810" class="strong" text-anchor="middle" font-size="85%">0 / 4278</text>
+   <use xlink:href="#element" x="1450" y="800" fill="#82ff82" />
+   <text x="1500" y="795" class="strong" text-anchor="middle" font-size="135%">66%</text>
+   <text x="1500" y="810" class="strong" text-anchor="middle" font-size="85%">1542 / 2320</text>
+   <use xlink:href="#element" x="1550" y="800" fill="#ffffff" />
+   <text x="1600" y="795" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1600" y="810" class="strong" text-anchor="middle" font-size="85%">0 / 4703</text>
+   <use xlink:href="#element" x="500" y="750" fill="#ffffff" />
+   <text x="550" y="745" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="550" y="760" class="strong" text-anchor="middle" font-size="85%">0 / 4591</text>
+   <use xlink:href="#element" x="600" y="750" fill="#ffffff" />
+   <text x="650" y="745" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="650" y="760" class="strong" text-anchor="middle" font-size="85%">0 / 4287</text>
+   <use xlink:href="#element" x="700" y="750" fill="#ffffff" />
+   <text x="750" y="745" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="750" y="760" class="strong" text-anchor="middle" font-size="85%">0 / 4742</text>
+   <use xlink:href="#element" x="800" y="750" fill="#ceffce" />
+   <text x="850" y="745" class="strong" text-anchor="middle" font-size="135%">26%</text>
+   <text x="850" y="760" class="strong" text-anchor="middle" font-size="85%">839 / 3180</text>
+   <use xlink:href="#element" x="900" y="750" fill="#d3ffd3" />
+   <text x="950" y="745" class="strong" text-anchor="middle" font-size="135%">23%</text>
+   <text x="950" y="760" class="strong" text-anchor="middle" font-size="85%">749 / 3189</text>
+   <use xlink:href="#element" x="1000" y="750" fill="#ffffff" />
+   <text x="1050" y="745" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1050" y="760" class="strong" text-anchor="middle" font-size="85%">0 / 4807</text>
+   <use xlink:href="#element" x="1100" y="750" fill="#b1ffb1" />
+   <text x="1150" y="745" class="strong" text-anchor="middle" font-size="135%">42%</text>
+   <text x="1150" y="760" class="strong" text-anchor="middle" font-size="85%">1295 / 3112</text>
+   <use xlink:href="#element" x="1200" y="750" fill="#ffffff" />
+   <text x="1250" y="745" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1250" y="760" class="strong" text-anchor="middle" font-size="85%">3 / 4790</text>
+   <use xlink:href="#element" x="1300" y="750" fill="#ffffff" />
+   <text x="1350" y="745" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1350" y="760" class="strong" text-anchor="middle" font-size="85%">0 / 4973</text>
+   <use xlink:href="#element" x="1400" y="750" fill="#86ff86" />
+   <text x="1450" y="745" class="strong" text-anchor="middle" font-size="135%">64%</text>
+   <text x="1450" y="760" class="strong" text-anchor="middle" font-size="85%">1576 / 2448</text>
+   <use xlink:href="#element" x="1500" y="750" fill="#cfffcf" />
+   <text x="1550" y="745" class="strong" text-anchor="middle" font-size="135%">26%</text>
+   <text x="1550" y="760" class="strong" text-anchor="middle" font-size="85%">757 / 2946</text>
+   <use xlink:href="#element" x="550" y="700" fill="#ffffff" />
+   <text x="600" y="695" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="600" y="710" class="strong" text-anchor="middle" font-size="85%">0 / 4390</text>
+   <use xlink:href="#element" x="650" y="700" fill="#ffffff" />
+   <text x="700" y="695" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="700" y="710" class="strong" text-anchor="middle" font-size="85%">0 / 4930</text>
+   <use xlink:href="#element" x="750" y="700" fill="#ceffce" />
+   <text x="800" y="695" class="strong" text-anchor="middle" font-size="135%">26%</text>
+   <text x="800" y="710" class="strong" text-anchor="middle" font-size="85%">836 / 3211</text>
+   <use xlink:href="#element" x="850" y="700" fill="#d0ffd0" />
+   <text x="900" y="695" class="strong" text-anchor="middle" font-size="135%">25%</text>
+   <text x="900" y="710" class="strong" text-anchor="middle" font-size="85%">772 / 3085</text>
+   <use xlink:href="#element" x="950" y="700" fill="#ffffff" />
+   <text x="1000" y="695" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1000" y="710" class="strong" text-anchor="middle" font-size="85%">0 / 4938</text>
+   <use xlink:href="#element" x="1050" y="700" fill="#ffffff" />
+   <text x="1100" y="695" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1100" y="710" class="strong" text-anchor="middle" font-size="85%">0 / 4173</text>
+   <use xlink:href="#element" x="1150" y="700" fill="#ffffff" />
+   <text x="1200" y="695" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1200" y="710" class="strong" text-anchor="middle" font-size="85%">3 / 4991</text>
+   <use xlink:href="#element" x="1250" y="700" fill="#ffffff" />
+   <text x="1300" y="695" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1300" y="710" class="strong" text-anchor="middle" font-size="85%">0 / 4330</text>
+   <use xlink:href="#element" x="1350" y="700" fill="#ffffff" />
+   <text x="1400" y="695" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1400" y="710" class="strong" text-anchor="middle" font-size="85%">0 / 4719</text>
+   <use xlink:href="#element" x="1450" y="700" fill="#cfffcf" />
+   <text x="1500" y="695" class="strong" text-anchor="middle" font-size="135%">25%</text>
+   <text x="1500" y="710" class="strong" text-anchor="middle" font-size="85%">783 / 3082</text>
+   <use xlink:href="#element" x="600" y="650" fill="#ffffff" />
+   <text x="650" y="645" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="650" y="660" class="strong" text-anchor="middle" font-size="85%">0 / 5033</text>
+   <use xlink:href="#element" x="700" y="650" fill="#ffffff" />
+   <text x="750" y="645" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="750" y="660" class="strong" text-anchor="middle" font-size="85%">0 / 4235</text>
+   <use xlink:href="#element" x="800" y="650" fill="#d0ffd0" />
+   <text x="850" y="645" class="strong" text-anchor="middle" font-size="135%">25%</text>
+   <text x="850" y="660" class="strong" text-anchor="middle" font-size="85%">780 / 3105</text>
+   <use xlink:href="#element" x="900" y="650" fill="#ffffff" />
+   <text x="950" y="645" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="950" y="660" class="strong" text-anchor="middle" font-size="85%">0 / 4857</text>
+   <use xlink:href="#element" x="1000" y="650" fill="#ffffff" />
+   <text x="1050" y="645" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1050" y="660" class="strong" text-anchor="middle" font-size="85%">0 / 4304</text>
+   <use xlink:href="#element" x="1100" y="650" fill="#ffffff" />
+   <text x="1150" y="645" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1150" y="660" class="strong" text-anchor="middle" font-size="85%">0 / 4760</text>
+   <use xlink:href="#element" x="1200" y="650" fill="#ffffff" />
+   <text x="1250" y="645" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1250" y="660" class="strong" text-anchor="middle" font-size="85%">0 / 4531</text>
+   <use xlink:href="#element" x="1300" y="650" fill="#ffffff" />
+   <text x="1350" y="645" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1350" y="660" class="strong" text-anchor="middle" font-size="85%">0 / 4076</text>
+   <use xlink:href="#element" x="1400" y="650" fill="#ffffff" />
+   <text x="1450" y="645" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1450" y="660" class="strong" text-anchor="middle" font-size="85%">0 / 4560</text>
+   <use xlink:href="#element" x="650" y="600" fill="#ffffff" />
+   <text x="700" y="595" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="700" y="610" class="strong" text-anchor="middle" font-size="85%">0 / 4338</text>
+   <use xlink:href="#element" x="750" y="600" fill="#ffffff" />
+   <text x="800" y="595" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="800" y="610" class="strong" text-anchor="middle" font-size="85%">0 / 4073</text>
+   <use xlink:href="#element" x="850" y="600" fill="#ffffff" />
+   <text x="900" y="595" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="900" y="610" class="strong" text-anchor="middle" font-size="85%">0 / 4885</text>
+   <use xlink:href="#element" x="950" y="600" fill="#ffffff" />
+   <text x="1000" y="595" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1000" y="610" class="strong" text-anchor="middle" font-size="85%">0 / 4223</text>
+   <use xlink:href="#element" x="1050" y="600" fill="#ffffff" />
+   <text x="1100" y="595" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1100" y="610" class="strong" text-anchor="middle" font-size="85%">0 / 4891</text>
+   <use xlink:href="#element" x="1150" y="600" fill="#ffffff" />
+   <text x="1200" y="595" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1200" y="610" class="strong" text-anchor="middle" font-size="85%">0 / 4297</text>
+   <use xlink:href="#element" x="1250" y="600" fill="#ffffff" />
+   <text x="1300" y="595" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1300" y="610" class="strong" text-anchor="middle" font-size="85%">0 / 4277</text>
+   <use xlink:href="#element" x="1350" y="600" fill="#ffffff" />
+   <text x="1400" y="595" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1400" y="610" class="strong" text-anchor="middle" font-size="85%">0 / 3917</text>
+   <use xlink:href="#element" x="700" y="550" fill="#ffffff" />
+   <text x="750" y="545" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="750" y="560" class="strong" text-anchor="middle" font-size="85%">0 / 4176</text>
+   <use xlink:href="#element" x="800" y="550" fill="#ffffff" />
+   <text x="850" y="545" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="850" y="560" class="strong" text-anchor="middle" font-size="85%">0 / 5073</text>
+   <use xlink:href="#element" x="900" y="550" fill="#ffffff" />
+   <text x="950" y="545" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="950" y="560" class="strong" text-anchor="middle" font-size="85%">0 / 4251</text>
+   <use xlink:href="#element" x="1000" y="550" fill="#ffffff" />
+   <text x="1050" y="545" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1050" y="560" class="strong" text-anchor="middle" font-size="85%">0 / 4810</text>
+   <use xlink:href="#element" x="1100" y="550" fill="#ffffff" />
+   <text x="1150" y="545" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1150" y="560" class="strong" text-anchor="middle" font-size="85%">0 / 4428</text>
+   <use xlink:href="#element" x="1200" y="550" fill="#a1ffa1" />
+   <text x="1250" y="545" class="strong" text-anchor="middle" font-size="135%">50%</text>
+   <text x="1250" y="560" class="strong" text-anchor="middle" font-size="85%">1345 / 2698</text>
+   <use xlink:href="#element" x="1300" y="550" fill="#ffffff" />
+   <text x="1350" y="545" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1350" y="560" class="strong" text-anchor="middle" font-size="85%">0 / 4118</text>
+   <use xlink:href="#element" x="750" y="500" fill="#ffffff" />
+   <text x="800" y="495" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="800" y="510" class="strong" text-anchor="middle" font-size="85%">0 / 5176</text>
+   <use xlink:href="#element" x="850" y="500" fill="#ffffff" />
+   <text x="900" y="495" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="900" y="510" class="strong" text-anchor="middle" font-size="85%">0 / 4439</text>
+   <use xlink:href="#element" x="950" y="500" fill="#ffffff" />
+   <text x="1000" y="495" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1000" y="510" class="strong" text-anchor="middle" font-size="85%">0 / 4838</text>
+   <use xlink:href="#element" x="1050" y="500" fill="#ffffff" />
+   <text x="1100" y="495" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1100" y="510" class="strong" text-anchor="middle" font-size="85%">0 / 4347</text>
+   <use xlink:href="#element" x="1150" y="500" fill="#d4ffd4" />
+   <text x="1200" y="495" class="strong" text-anchor="middle" font-size="135%">23%</text>
+   <text x="1200" y="510" class="strong" text-anchor="middle" font-size="85%">779 / 3395</text>
+   <use xlink:href="#element" x="1250" y="500" fill="#c9ffc9" />
+   <text x="1300" y="495" class="strong" text-anchor="middle" font-size="135%">29%</text>
+   <text x="1300" y="510" class="strong" text-anchor="middle" font-size="85%">874 / 3010</text>
+   <use xlink:href="#element" x="800" y="450" fill="#ffffff" />
+   <text x="850" y="445" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="850" y="460" class="strong" text-anchor="middle" font-size="85%">0 / 4542</text>
+   <use xlink:href="#element" x="900" y="450" fill="#ffffff" />
+   <text x="950" y="445" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="950" y="460" class="strong" text-anchor="middle" font-size="85%">0 / 5026</text>
+   <use xlink:href="#element" x="1000" y="450" fill="#ffffff" />
+   <text x="1050" y="445" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1050" y="460" class="strong" text-anchor="middle" font-size="85%">0 / 4375</text>
+   <use xlink:href="#element" x="1100" y="450" fill="#d0ffd0" />
+   <text x="1150" y="445" class="strong" text-anchor="middle" font-size="135%">25%</text>
+   <text x="1150" y="460" class="strong" text-anchor="middle" font-size="85%">824 / 3269</text>
+   <use xlink:href="#element" x="1200" y="450" fill="#8dff8d" />
+   <text x="1250" y="445" class="strong" text-anchor="middle" font-size="135%">61%</text>
+   <text x="1250" y="460" class="strong" text-anchor="middle" font-size="85%">1514 / 2501</text>
+   <use xlink:href="#element" x="850" y="400" fill="#ffffff" />
+   <text x="900" y="395" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="900" y="410" class="strong" text-anchor="middle" font-size="85%">0 / 5129</text>
+   <use xlink:href="#element" x="950" y="400" fill="#7bff7b" />
+   <text x="1000" y="395" class="strong" text-anchor="middle" font-size="135%">70%</text>
+   <text x="1000" y="410" class="strong" text-anchor="middle" font-size="85%">1882 / 2681</text>
+   <use xlink:href="#element" x="1050" y="400" fill="#d0ffd0" />
+   <text x="1100" y="395" class="strong" text-anchor="middle" font-size="135%">25%</text>
+   <text x="1100" y="410" class="strong" text-anchor="middle" font-size="85%">825 / 3296</text>
+   <use xlink:href="#element" x="1150" y="400" fill="#81ff81" />
+   <text x="1200" y="395" class="strong" text-anchor="middle" font-size="135%">67%</text>
+   <text x="1200" y="410" class="strong" text-anchor="middle" font-size="85%">1583 / 2351</text>
+   <use xlink:href="#element" x="900" y="350" fill="#80ff80" />
+   <text x="950" y="345" class="strong" text-anchor="middle" font-size="135%">68%</text>
+   <text x="950" y="360" class="strong" text-anchor="middle" font-size="85%">1884 / 2782</text>
+   <use xlink:href="#element" x="1000" y="350" fill="#ffffff" />
+   <text x="1050" y="345" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1050" y="360" class="strong" text-anchor="middle" font-size="85%">0 / 4309</text>
+   <use xlink:href="#element" x="1100" y="350" fill="#85ff85" />
+   <text x="1150" y="345" class="strong" text-anchor="middle" font-size="135%">65%</text>
+   <text x="1150" y="360" class="strong" text-anchor="middle" font-size="85%">1561 / 2401</text>
+   <use xlink:href="#element" x="950" y="300" fill="#ffffff" />
+   <text x="1000" y="295" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1000" y="310" class="strong" text-anchor="middle" font-size="85%">0 / 4412</text>
+   <use xlink:href="#element" x="1050" y="300" fill="#ffffff" />
+   <text x="1100" y="295" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1100" y="310" class="strong" text-anchor="middle" font-size="85%">0 / 4150</text>
+   <use xlink:href="#element" x="1000" y="250" fill="#ffffff" />
+   <text x="1050" y="245" class="strong" text-anchor="middle" font-size="135%">0%</text>
+   <text x="1050" y="260" class="strong" text-anchor="middle" font-size="85%">0 / 4253</text>
+   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(213,1022), rotate(45)">JCM 30893</text>
+   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(263,972), rotate(45)">YL44</text>
+   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(313,922), rotate(45)">BR3</text>
+   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(363,872), rotate(45)">LMC520</text>
+   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(413,822), rotate(45)">DRBB27</text>
+   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(463,772), rotate(45)">BXY01</text>
+   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(513,722), rotate(45)">MB2-1</text>
+   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(563,672), rotate(45)">D75</text>
+   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(613,622), rotate(45)">ASCC 290</text>
+   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(663,572), rotate(45)">BG7</text>
+   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(713,522), rotate(45)">35624</text>
+   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(763,472), rotate(45)">BFE5264</text>
+   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(813,422), rotate(45)">R0052</text>
+   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(863,372), rotate(45)">GG</text>
+   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(913,322), rotate(45)">EB-AMDK-3</text>
+   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(963,272), rotate(45)">CECT 7210</text>
+   <text x="0" y="0" font-style="italic" text-anchor="end" transform="translate(1013,222), rotate(45)">JCM 7017</text>
+   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1083,223), rotate(-45)">JCM 30893</text>
+   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1133,273), rotate(-45)">YL44</text>
+   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1183,323), rotate(-45)">BR3</text>
+   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1233,373), rotate(-45)">LMC520</text>
+   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1283,423), rotate(-45)">DRBB27</text>
+   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1333,473), rotate(-45)">BXY01</text>
+   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1383,523), rotate(-45)">MB2-1</text>
+   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1433,573), rotate(-45)">D75</text>
+   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1483,623), rotate(-45)">ASCC 290</text>
+   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1533,673), rotate(-45)">BG7</text>
+   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1583,723), rotate(-45)">35624</text>
+   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1633,773), rotate(-45)">BFE5264</text>
+   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1683,823), rotate(-45)">R0052</text>
+   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1733,873), rotate(-45)">GG</text>
+   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1783,923), rotate(-45)">EB-AMDK-3</text>
+   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1833,973), rotate(-45)">CECT 7210</text>
+   <text x="0" y="0" font-style="italic" text-anchor="start" transform="translate(1883,1023), rotate(-45)">JCM 7017</text>
   <defs>
     <linearGradient id="red_linear" x1="0%" y1="0%" x2="100%" y2="0%">
        <stop offset="0%"   stop-color="#ffffff"/>
@@ -362,12 +512,12 @@
        <stop offset="100%" stop-color="#66ff66"/>
     </linearGradient>
   </defs>
-  <rect x="600" y="1000" width="250" height="30" stroke="black" stroke-width="2" fill="url(#red_linear)" />
-  <rect x="950" y="1000" width="250" height="30" stroke="black" stroke-width="2" fill="url(#green_linear)" />
- <text x="725" y="990" class="strong" text-anchor="middle">Homology within proteomes</text>
- <text x="600" y="1045" class="strong" text-anchor="middle" font-size="100%">0.19%</text>
- <text x="850" y="1045" class="strong" text-anchor="middle" font-size="100%">6.01%</text>
- <text x="1075" y="990" class="strong" text-anchor="middle">Homology between proteomes</text>
- <text x="950" y="1045" class="strong" text-anchor="middle" font-size="100%">44.76%</text>
- <text x="1200" y="1045" class="strong" text-anchor="middle" font-size="100%">88.58%</text>
+  <rect x="750" y="1150" width="250" height="30" stroke="black" stroke-width="2" fill="url(#red_linear)" />
+  <rect x="1100" y="1150" width="250" height="30" stroke="black" stroke-width="2" fill="url(#green_linear)" />
+ <text x="875" y="1140" class="strong" text-anchor="middle">Homology within proteomes</text>
+ <text x="750" y="1195" class="strong" text-anchor="middle" font-size="100%">0.13%</text>
+ <text x="1000" y="1195" class="strong" text-anchor="middle" font-size="100%">2.66%</text>
+ <text x="1225" y="1140" class="strong" text-anchor="middle">Homology between proteomes</text>
+ <text x="1100" y="1195" class="strong" text-anchor="middle" font-size="100%">0.00%</text>
+ <text x="1350" y="1195" class="strong" text-anchor="middle" font-size="100%">81.56%</text>
 </svg>
